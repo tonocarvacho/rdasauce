@@ -1,106 +1,81 @@
-/**
- * File navigation.js.
- *
- * Handles toggling the navigation menu for small screens and enables TAB key
- * navigation support for dropdown menus.
- */
-( function() {
-	var container, button, menu, links, i, len;
+(function( $ ) {
 
-	container = document.getElementById( 'site-navigation' );
-	if ( ! container ) {
-		return;
-	}
+// back to top 
+$('.goup').on('click', function(e) {
+  e.preventDefault();
+  $('.nav-toggle').removeClass('open');
+  $('.menu-left').removeClass('collapse');
+  $('html, body').animate({
+    scrollTop: 0
+  }, 750, 'easeInOutQuad')
+});
 
-	button = container.getElementsByTagName( 'button' )[0];
-	if ( 'undefined' === typeof button ) {
-		return;
-	}
+// TOGGLE HAMBURGER & COLLAPSE NAV
+$('.nav-toggle').on('click', function() {
+  $(this).toggleClass('open');
+  $('.menu-left').toggleClass('collapse');
+});
+// REMOVE X & COLLAPSE NAV ON ON CLICK
+$('.menu-left a').on('click', function() {
+  $('.nav-toggle').removeClass('open');
+  $('.menu-left').removeClass('collapse');
+});
 
-	menu = container.getElementsByTagName( 'ul' )[0];
+// smooth scroll between sections
+$('a[href^="#"]').on('click', function(event) {
 
-	// Hide menu toggle button if menu is empty and return early.
-	if ( 'undefined' === typeof menu ) {
-		button.style.display = 'none';
-		return;
-	}
+  var $target = $(this.getAttribute('href'));
+  if($target.length) {
+    event.preventDefault();
+    $('html, body').stop().animate({
+      scrollTop: $target.offset().top
+    }, 750, 'easeInOutQuad');
+  }
+});
 
-	menu.setAttribute( 'aria-expanded', 'false' );
-	if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
-		menu.className += ' nav-menu';
-	}
+// SHOW/HIDE NAV
 
-	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
-			container.className = container.className.replace( ' toggled', '' );
-			button.setAttribute( 'aria-expanded', 'false' );
-			menu.setAttribute( 'aria-expanded', 'false' );
-		} else {
-			container.className += ' toggled';
-			button.setAttribute( 'aria-expanded', 'true' );
-			menu.setAttribute( 'aria-expanded', 'true' );
-		}
-	};
+// Hide #masthead on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('#masthead').outerHeight();
 
-	// Get all the link elements within the menu.
-	links    = menu.getElementsByTagName( 'a' );
+$(window).scroll(function(event){
+    didScroll = true;
+});
 
-	// Each time a menu link is focused or blurred, toggle focus.
-	for ( i = 0, len = links.length; i < len; i++ ) {
-		links[i].addEventListener( 'focus', toggleFocus, true );
-		links[i].addEventListener( 'blur', toggleFocus, true );
-	}
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 50);
 
-	/**
-	 * Sets or removes .focus class on an element.
-	 */
-	function toggleFocus() {
-		var self = this;
+function hasScrolled() {
+    var st = $(this).scrollTop();
 
-		// Move up through the ancestors of the current link until we hit .nav-menu.
-		while ( -1 === self.className.indexOf( 'nav-menu' ) ) {
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
 
-			// On li elements toggle the class .focus.
-			if ( 'li' === self.tagName.toLowerCase() ) {
-				if ( -1 !== self.className.indexOf( 'focus' ) ) {
-					self.className = self.className.replace( ' focus', '' );
-				} else {
-					self.className += ' focus';
-				}
-			}
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('#masthead').removeClass('show-nav').addClass('hide-nav');
+        $('.nav-toggle').removeClass('open');
+        $('.menu-left').removeClass('collapse');
+    } else {
+        // Scroll Up
 
-			self = self.parentElement;
-		}
-	}
+        if(st + $(window).height() < $(document).height()) {
+            $('#masthead').removeClass('hide-nav').addClass('show-nav');
+        }
+    }
 
-	/**
-	 * Toggles `focus` class to allow submenu access on tablets.
-	 */
-	( function( container ) {
-		var touchStartFn, i,
-			parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
+    lastScrollTop = st;
+}
 
-		if ( 'ontouchstart' in window ) {
-			touchStartFn = function( e ) {
-				var menuItem = this.parentNode, i;
+})( jQuery );
 
-				if ( ! menuItem.classList.contains( 'focus' ) ) {
-					e.preventDefault();
-					for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
-						if ( menuItem === menuItem.parentNode.children[i] ) {
-							continue;
-						}
-						menuItem.parentNode.children[i].classList.remove( 'focus' );
-					}
-					menuItem.classList.add( 'focus' );
-				} else {
-					menuItem.classList.remove( 'focus' );
-				}
-			};
-
-			for ( i = 0; i < parentLink.length; ++i ) {
-				parentLink[i].addEventListener( 'touchstart', touchStartFn, false );
-			}
-		}
-	}( container ) );
-} )();

@@ -8,31 +8,29 @@
  */
 
 ?>
+ 
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				rdasauce_posted_on();
-				rdasauce_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php rdasauce_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
+	
+							
+						<!-- === BLOG ITEM === -->
+						<div class="single-post">
+							<div class="single-post-date">
+								<div class="single-post-date-number">02</div>OCT
+							</div>
+							<div class="single-post-image">
+								<?php rdasauce_post_thumbnail(); ?>
+							</div>
+							<div class="single-post-info">
+								<span class="author-icon"><i class="fa fa-user"></i></span>
+								<a href="#"><?php rdasauce_posted_by(); ?></a>
+								<span class="date-icon"><i class="fa fa-calendar"></i></span>
+								<a href=""><?php rdasauce_posted_on(); ?></a>
+							</div>
+							<div class="single-post-title">
+								<?php the_title( '<h3><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' ); ?>
+							</div>
+							<div class="single-post-text">
+								<?php
 		the_content( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
@@ -51,9 +49,7 @@
 			'after'  => '</div>',
 		) );
 		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php rdasauce_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+						
+							
+							</div>
+							</div>	

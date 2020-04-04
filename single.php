@@ -9,9 +9,51 @@
 
 get_header();
 ?>
+	<!-- ===================================
+		PAGE HEADER
+	======================================== -->
+	<div class="page-header">
+		<div class="page-header-overlay"></div>
+		<div class="container">
+			<div class="row">
+				
+				<!-- === PAGE HEADER TITLE === -->
+				<div class="page-header-title">
+				    <br>
+					<h2>NOTICIAS Y ACTUALIZACIONES</h2>
+					
+				</div>
+				
+				
+				<!-- === PAGE HEADER BREADCRUMB === -->
+				<div class="page-header-breadcrumb">
+					<ol class="breadcrumb">
+						<li><a href="index.php">Inicio</a></li>
+						<li><a href="noticias.php">Noticias</a></li>
+					</ol>
+				</div>
+				<br>
+				
+			</div>
+		</div>
+	</div>
+	<!-- ===================================
+		END PAGE HEADER
+	======================================== -->
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<!-- =========================
+		BLOG ITEMS
+	============================== -->
+    <div class="def-section single-blog-section">
+		<div class="container">
+			<div class="row">
+								
+				<!-- === BLOG ITEMS === -->
+				
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+
+
+
 
 		<?php
 		while ( have_posts() ) :
@@ -21,17 +63,19 @@ get_header();
 
 			the_post_navigation();
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			
 
 		endwhile; // End of the loop.
 		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
-<?php
-get_sidebar();
+
+				</div>
+				
+				<?php get_sidebar(); ?>
+
+			</div>
+		</div>
+	</div>
+	<?php
 get_footer();

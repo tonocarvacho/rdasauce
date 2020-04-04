@@ -1,0 +1,282 @@
+a {
+  color: #ff8840;
+}
+.color-primary {
+  color: #ff8840 !important;
+}
+.with-square:before {
+  background-color: #ff8840;
+}
+.my-btn-primary {
+  border: 1px solid #ff8840;
+  background-color: #ff8840;
+}
+.my-btn-primary:hover {
+  color: #ff8840;
+}
+.btn-primary {
+  background-color: #ff8840;
+  border-color: #ff8840;
+}
+.btn-primary.disabled {
+  background-color: #007b2e;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  background-color: #007b2e;
+}
+.pagination .active a {
+  background-color: #ff8840;
+  border-color: #ff8840;
+}
+.pagination .active a:hover,
+.pagination .active a:focus {
+  background-color: #ff8840;
+  border-color: #ff8840;
+}
+.breadcrumb > li > a:hover,
+.breadcrumb > li > a:focus {
+  color: #ff8840;
+}
+.breadcrumb > .active {
+  color: #ff8840;
+}
+.my-blockquote {
+  background-color: #ff8840;
+}
+.my-blockquote-quote div {
+  background-color: #ff8840;
+}
+.media-body-top .media-info .media-date {
+  color: #ff8840;
+}
+.media-body-top .media-reply .my-btn-default {
+  color: #ff8840;
+  border-color: #ff8840;
+}
+.media-body-top .media-reply .my-btn-default .my-btn-bg-top,
+.media-body-top .media-reply .my-btn-default .my-btn-bg-bottom {
+  background-color: #ff8840;
+}
+.media-body-top .media-reply .my-btn-default:hover {
+  border-color: #ff8840;
+}
+.cssload-whirlpool,
+.cssload-whirlpool::before,
+.cssload-whirlpool::after {
+  border-left-color: #ff8840;
+}
+.top-bar {
+  background-color: #ff8840;
+}
+.main-menu .navbar-nav > li > a:hover,
+.main-menu .navbar-nav > li > a:focus {
+  color: #ff8840;
+}
+.main-menu .navbar-nav > li > a.active {
+  color: #ff8840;
+}
+.main-menu .navbar-nav > li.active > a {
+  color: #ff8840;
+}
+.main-menu .dropdown-menu {
+  background-color: #ff8840;
+}
+.main-menu .dropdown-menu > li > a:hover,
+.main-menu .dropdown-menu > li > a:focus {
+  color: #ff8840;
+}
+.main-menu .dropdown-menu > li > a.active {
+  color: #ff8840;
+}
+.main-menu .dropdown-menu > li.active > a {
+  color: #ff8840;
+}
+.main-menu .dropdown-menu:after {
+  border-bottom-color: #ff8840;
+}
+.main-slider .my-btn-default {
+  border-color: #ff8840;
+}
+.main-slider .my-btn-default .my-btn-bg-top,
+.main-slider .my-btn-default .my-btn-bg-bottom {
+  background-color: #ff8840;
+}
+.service-mark {
+  background-color: #ff8840;
+}
+.service-mark .my-btn-default .my-btn-bg-top,
+.service-mark .my-btn-default .my-btn-bg-bottom {
+  background-color: #ff8840;
+}
+.service-mark-border-top {
+  background-color: #ff8840;
+}
+.service-mark-border-right {
+  background-color: #ff8840;
+}
+.service-mark-border-bottom {
+  background-color: #ff8840;
+}
+.service-mark-border-left {
+  background-color: #ff8840;
+}
+.section-bg-right {
+  background-color: #ff8840;
+}
+.get-quote {
+  background-color: #ff8840;
+}
+.home-review-carousel-quote div {
+  background-color: #ff8840;
+}
+.stat-item-icon {
+  background-color: #ff8840;
+}
+.stat-item-mark {
+  background-color: #ff8840;
+}
+.home-blog-item-desc-info .comments-icon {
+  color: #ff8840;
+}
+.home-blog-item-mark {
+  background-color: #ff8840;
+}
+.home-blog-item-mark .home-blog-item-date {
+  background-color: #ff8840;
+}
+.home-blog-item-mark .home-blog-item-desc {
+  background-color: #ff8840;
+}
+.home-subscribe {
+  background-color: #ff8840;
+}
+.home-subscribe-form-button .my-btn-primary {
+  background-color: #007b2e;
+}
+.bottom .color-primary a {
+  color: #ff8840;
+}
+.service-menu > li > a:hover,
+.service-menu > li > a:focus {
+  background-color: #ff8840;
+}
+.service-menu > li.active > a {
+  background-color: #ff8840;
+}
+.service-detail .service-related h3 a:hover,
+.service-detail .service-related h3 a:focus {
+  color: #ff8840;
+}
+.about-text h2:before {
+  color: #ff8840;
+}
+.team-item-image-overlay {
+  background-color: #ff8840;
+}
+.team-item:hover .team-item-name {
+  color: #ff8840;
+}
+.blog-item-info .author-icon {
+  color: #ff8840;
+}
+.blog-item-info .date-icon {
+  color: #ff8840;
+}
+.blog-item-title h3:before {
+  background-color: #ff8840;
+}
+.blog-item-mark .blog-item-date {
+  background-color: #ff8840;
+}
+.blog-right-bar-item:before {
+  background-color: #ff8840;
+}
+.blog-right-bar input {
+  background-color: #ff8840;
+  border: 1px solid #ff8840;
+  width: 100%;
+}
+.blog-right-bar ::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #ff8840;
+}
+.blog-right-bar :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ff8840;
+  opacity: 1;
+}
+.blog-right-bar ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ff8840;
+  opacity: 1;
+}
+.blog-right-bar :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ff8840;
+}
+.recent-post-date .date-icon {
+  color: #fff000;
+}
+.blog-categories li a:hover,
+.blog-categories li a:focus {
+  color: #ff8840;
+}
+.blog-categories li.active a {
+  color: #ff8840;
+}
+.blog-tags a.active {
+  background-color: #ff8840;
+}
+.blog-tags a:hover,
+.blog-tags a:focus {
+  background-color: #ff8840;
+}
+.single-post-date {
+  background-color: #ff8840;
+}
+.single-post-info .author-icon {
+  color: #ff8840;
+}
+.single-post-info .date-icon {
+  color: #ff8840;
+}
+.single-post-title h3:before {
+  background-color: #ff8840;
+}
+.single-post-author-info-socials .my-btn-default .my-btn-bg-top,
+.single-post-author-info-socials .my-btn-default .my-btn-bg-bottom {
+  background-color: #ff8840;
+}
+.single-post-author-info-socials .my-btn-default:hover {
+  border-color: #ff8840;
+}
+.single-post-comments h3:before {
+  background-color: #ff8840;
+}
+.single-post-leave-comment h3:before {
+  background-color: #ff8840;
+}
+.contacts-info-title {
+  background-color: #ff8840;
+}
+.contact-details {
+  background-color: #ff8840;
+}
+.contact-detail-mark .contact-detail-icon {
+  color: #ff8840;
+}
+.contact-detail-mark .contact-detail-title h3:before {
+  background-color: #ff8840;
+}
+.slide-menu .close-menu:hover {
+  color: #ff8840;
+}
+.slide-menu .left-menu > li > a:hover,
+.slide-menu .left-menu > li > a:focus {
+  color: #ff8840;
+}
+
+
+

@@ -9,19 +9,52 @@
 
 get_header();
 ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-
+		 
+	<!-- ===================================
+		PAGE HEADER
+	======================================== -->
+	<div class="page-header">
+		<div class="page-header-overlay"></div>
+		<div class="container">
+			<div class="row">
+				
+				<!-- === PAGE HEADER TITLE === -->
+				<div class="page-header-title">
+		<br>
+					<h2>NOTICIAS EXTRAPORTUARIO EL SAUCE</h2>
+					
+				</div>
+				
+				
+				<!-- === PAGE HEADER BREADCRUMB === -->
+				<div class="page-header-breadcrumb">
+					<ol class="breadcrumb">
+						<li><a href="index.php">Inicio</a></li>
+						
+						<li><a href="noticias.php">Noticias</a></li>
+						
+					</ol>
+				</div>
+				<br>
+				
+			</div>
+		</div>
+	</div>
+	<!-- ===================================
+		END PAGE HEADER
+	======================================== -->
+	
+	<!-- =========================
+		BLOG ITEMS
+	============================== -->
+    <div class="def-section blog-section">
+		<div class="container">
+			<div class="row">
+								
+				<!-- === BLOG ITEMS === -->
+				
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 blog-items">
+<?php if ( have_posts() ) : ?>
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -32,7 +65,12 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+				  if(is_category('Documentos')){
+			        get_template_part( 'template-parts/content-leftsidebar', get_post_type() );
+			    }else{
+			        get_template_part( 'template-parts/content-archive', get_post_type() );
+			    }
+				
 
 			endwhile;
 
@@ -45,9 +83,31 @@ get_header();
 		endif;
 		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+</div>
+				
+				<?php get_sidebar(); ?>
+
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- ===================================
+		PAGINATION SECTION
+	======================================== -->
+	<!--
+	<div class="def-section pagination-section">
+		<div class="container">
+			
+			<ul class="pagination">
+				<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+			
+		</div>
+	</div>
+	-->
 
 <?php
-get_sidebar();
 get_footer();
