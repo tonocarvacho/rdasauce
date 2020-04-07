@@ -29,9 +29,16 @@ get_header();
 				<!-- === PAGE HEADER BREADCRUMB === -->
 				<div class="page-header-breadcrumb">
 					<ol class="breadcrumb">
-						<li><a href="index.php">Inicio</a></li>
-						
-						<li><a href="noticias.php">Noticias</a></li>
+						<li><a href="<?php echo home_url(); ?>">Inicio</a></li>
+					<li><?php 
+					$category = get_the_category();
+
+if ( $category[0]->cat_name == "Destacados") {
+    echo '<a href="' . get_category_link( $category[1]->term_id ) . '">' . $category[1]->cat_name . '</a>';
+} else {
+	the_category('<a>', '</a>');
+}
+ ?></li>
 						
 					</ol>
 				</div>
@@ -65,11 +72,8 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				  if(is_category('Documentos')){
-			        get_template_part( 'template-parts/content-leftsidebar', get_post_type() );
-			    }else{
+				 
 			        get_template_part( 'template-parts/content-archive', get_post_type() );
-			    }
 				
 
 			endwhile;

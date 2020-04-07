@@ -546,160 +546,48 @@ get_header();
 					<div class="subtitle with-square">DESCUBRE MÁS SOBRE NOSOTROS</div>
 				</div>
 				
-					<!-- === BLOG ITEM === -->
+				<?php
+$args = array (
+    'category_name' => 'Noticias',
+    'post_type' => 'post',
+    'posts_per_page' => 6, 
+);
+$category_block_query = new WP_Query( $args );
+    if ( $category_block_query->have_posts() ) : 
+        ?><?php
+        while ( $category_block_query->have_posts() ) : $category_block_query->the_post(); 
+           ?> 
+			<!-- === BLOG ITEM === -->
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="home-blog-item">
 						<div class="home-blog-item-date">
 							<div class="home-blog-item-date-number">10</div>MARZO
 						</div>
 						<div class="home-blog-item-image">
-						    <a href="012-speed.php">
-							<img src="<?php echo bloginfo('template_url');?>/media/blog/13.jpg"  alt="" />
+						    <a href="<?php the_permalink() ?>">
+							<?php the_post_thumbnail('rdasauce-home-featured'); ?>
+							</a>
 						</div>
 						<div class="home-blog-item-desc">
 							<div class="home-blog-item-desc-title">
-								<a href="012-speed.php">“Speed Unlimited Energy Drink”, vuelve a Chile.</a>
+								<?php the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a>' ); ?>
 							</div>
 							<div class="home-blog-item-desc-info">
-								<a href="012-speed.php">10/03/2020</a>
+								<a href="<?php the_permalink() ?>"><?php rdasauce_posted_on(); ?></a>
 							
 							</div>
 							<div class="home-blog-item-desc-text">
-								<p>En la ciudad de Los Andes, Chile, en las instalaciones de “Extraportuario...</p>
+								<?php echo get_excerpt(70); ?>
 							</div>
 						</div>
 					</div>
 				</div>
-				
-					<!-- === BLOG ITEM === -->
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="home-blog-item">
-						<div class="home-blog-item-date">
-							<div class="home-blog-item-date-number">13</div>ENERO
-						</div>
-						<div class="home-blog-item-image">
-						    <a href="011-voleibol.php">
-							<img src="<?php echo bloginfo('template_url');?>/media/blog/12.jpg"  alt="" />
-						</div>
-						<div class="home-blog-item-desc">
-							<div class="home-blog-item-desc-title">
-								<a href="011-voleibol.php">APOYAMOS A EQUIPO DE VOLEIBOL EN TORNEO INTERNACIONAL.</a>
-							</div>
-							<div class="home-blog-item-desc-info">
-								<a href="011-voleibol.php">13/01/2020</a>
-							
-							</div>
-							<div class="home-blog-item-desc-text">
-								<p>Extraportuario El Sauce se hizo presente con indumentaria deportiva...</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				
-				
-					<!-- === BLOG ITEM === -->
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="home-blog-item">
-						<div class="home-blog-item-date">
-							<div class="home-blog-item-date-number">10</div>OCT
-						</div>
-						<div class="home-blog-item-image">
-						    <a href="010-5tohub.php">
-							<img src="<?php echo bloginfo('template_url');?>/media/blog/11.jpg"  alt="" />
-						</div>
-						<div class="home-blog-item-desc">
-							<div class="home-blog-item-desc-title">
-								<a href="010-5tohub.php">5TO HUB LOGÍSTICO DE PYMES MENDOCINAS EXPORTADORAS.</a>
-							</div>
-							<div class="home-blog-item-desc-info">
-								<a href="010-5tohub.php">10/10/2019</a>
-							
-							</div>
-							<div class="home-blog-item-desc-text">
-								<p>En La ciudad de Los Andes, Chile, durante la tarde del día Jueves 10...</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-					<!-- === BLOG ITEM === -->
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="home-blog-item">
-						<div class="home-blog-item-date">
-							<div class="home-blog-item-date-number">02</div>OCT
-						</div>
-						<div class="home-blog-item-image">
-						    <a href="009-seminariocamacoes.php">
-							<img src="<?php echo bloginfo('template_url');?>/media/blog/10.jpg"  alt="" />
-						</div>
-						<div class="home-blog-item-desc">
-							<div class="home-blog-item-desc-title">
-								<a href="009-seminariocamacoes.php">SEMINARIO DE LOGÍSTICA Y COMERCIO EXTERIOR</a>
-							</div>
-							<div class="home-blog-item-desc-info">
-								<a href="009-seminariocamacoes.php">02/10/2019</a>
-							
-							</div>
-							<div class="home-blog-item-desc-text">
-								<p>Nos hicimos presentes en el Seminario de Logística y Comercio Exterior...</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				
-				
-				<!-- === BLOG ITEM === -->
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="home-blog-item home-blog-item-mark">
-						<div class="home-blog-item-date">
-							<div class="home-blog-item-date-number">04</div>ABRIL
-						</div>
-						<div class="home-blog-item-image">
-						    <a href="cargatransito.php">
-							<img src="<?php echo bloginfo('template_url');?>/media/blog/5.jpg" alt="" />
-						</div>
-						<div class="home-blog-item-desc">
-							<div class="home-blog-item-desc-title">
-								<a href="cargatransito.php">PRIMERA CARGA EN TRÁNSITO</a>
-							</div>
-							<div class="home-blog-item-desc-info">
-								<a href="cargatransito.php">26/07/2019</a>
-							
-							</div>
-							<div class="home-blog-item-desc-text">
-								<p>Durante el mes de Julio en las instalaciones de “Extraportuario El Sauce...</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- === BLOG ITEM === -->
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="home-blog-item">
-						<div class="home-blog-item-date">
-							<div class="home-blog-item-date-number">04</div>ABRIL
-						</div>
-						<div class="home-blog-item-image"><a href="007-autorizacionmercancias.php">
-							<img src="<?php echo bloginfo('template_url');?>/media/blog/1.jpg" alt="" />
-						</div>
-						<div class="home-blog-item-desc">
-							<div class="home-blog-item-desc-title">
-								<a href="007-autorizacionmercancias.php">AUTORIZACIÓN PARA MERCANCÍAS EN DTI Y MIC/DTA</a>
-							</div>
-							<div class="home-blog-item-desc-info">
-								<a href="007-autorizacionmercancias.php">04/04/2019</a>
-								
-							</div>
-							<div class="home-blog-item-desc-text">
-								<p>El Servicio Nacional de Aduanas autoriza mediante oficio N° 464, con fecha...</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-	
+           
+            <?php
+        endwhile; wp_reset_postdata(); ?> <?php
+    else: 
+    endif; 
+?>	
 						
 				
 				

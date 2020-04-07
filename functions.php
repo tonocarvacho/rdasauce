@@ -41,7 +41,8 @@ if ( ! function_exists( 'rdasauce_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-		add_image_size( 'rdasauce-post-featured', 640, 480, true );
+		add_image_size( 'rdasauce-home-featured', 270, 231, true );
+		add_image_size( 'rdasauce-sidebar', 125, 95, true );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -260,5 +261,121 @@ require get_template_directory() . '/inc/customizer.php';
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
+}
+
+/****************************************************************
+ * Custom excerpts.
+ *****************************************************************/
+/**
+ * Customize ellipsis at end of excerpts.
+ */
+function basetheme_excerpt_more( $more ) {
+    return "…";
+}
+add_filter( 'excerpt_more', 'basetheme_excerpt_more' );
+
+/**
+ * Filter default excerpt length to # words.
+ */
+function basetheme_excerpt_length( $length ) {
+    return 40;
+}
+add_filter( 'excerpt_length', 'basetheme_excerpt_length');
+
+/**
+ * Custom excerpt length. "echo get_excerpt(80);"
+ */
+function get_excerpt( $count ) {
+$excerpt = get_the_excerpt();
+$lenght  = strlen($excerpt);
+$excerpt = strip_tags($excerpt);
+$excerpt = substr($excerpt, 0, $count);
+$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+if ($lenght<$count) {
+    $excerpt = '<p>'.$excerpt.'</p>';
+} else {
+    $excerpt = '<p>'.$excerpt.'...</p>';
+}
+return $excerpt;
+}
+/****************************************************************
+ * END Custom excerpts.
+ *****************************************************************/
+
+/************************
+    Add Custom Posts
+*************************/
+function custom_post_type() {
+ 
+// Set UI labels for Custom Post Type
+    $labels = array(
+        'name'                => _x( 'Jefe Turno', 'Post Type General Name', 'rdasauce' ),
+        'singular_name'       => _x( 'Jefe Turno', 'Post Type Singular Name', 'rdasauce' ),
+        'menu_name'           => __( 'Jefes Turno', 'rdasauce' ),
+        'parent_item_colon'   => __( 'Parent Jefe', 'rdasauce' ),
+        'all_items'           => __( 'Todos', 'rdasauce' ),
+        'view_item'           => __( 'Ver', 'rdasauce' ),
+        'add_new_item'        => __( 'Agregar', 'rdasauce' ),
+        'add_new'             => __( 'Agregar', 'rdasauce' ),
+        'edit_item'           => __( 'Editar', 'rdasauce' ),
+        'update_item'         => __( 'Actualizar', 'rdasauce' ),
+        'search_items'        => __( 'Buscar', 'rdasauce' ),
+        'not_found'           => __( 'Not Found', 'rdasauce' ),
+        'not_found_in_trash'  => __( 'Not found in Trash', 'rdasauce' ),
+    );
+// Set other options for Custom Post Type
+    $args = array(
+        'label'               => __( 'Jefes Turno', 'rdasauce' ),
+        'description'         => __( 'Listado jefes con datos', 'rdasauce' ),
+        'labels'              => $labels,
+        'show_in_rest'        => true,
+        'supports'            => array( 'title', 'thumbnail', 'custom-fields'),
+        'hierarchical'        => false,
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
+        'menu_position'       => 3,
+        'can_export'          => true,
+        'has_archive'         => true,
+        'exclude_from_search' => true,
+        'publicly_queryable'  => true,
+        'capability_type'     => 'page',
+        // This is where we add taxonomies to our CPT
+    );
+    // Registering your Custom Post Type
+    register_post_type( 'Jefe Turno', $args );
+}
+ 
+function namespace_add_custom_types( $query ) {
+  if( (is_category() || is_tag()) && $query->is_archive() && empty( $query->query_vars['suppress_filters'] ) ) {
+    $query->set( 'post_type', array(
+     'post', 'Jefe Turno'
+        ));
+    }
+    return $query;
+}
+add_filter( 'pre_get_posts', 'namespace_add_custom_types' );
+
+/* Hook into the 'init' action so that the function
+* Containing our post type registration is not 
+* unnecessarily executed. 
+*/
+ 
+add_action( 'init', 'custom_post_type', 0 );
+/**************************
+  * END Add Custom Posts *
+***************************/
+
+
+
+add_filter('use_block_editor_for_post_type', 'prefix_disable_gutenberg', 10, 2);
+function prefix_disable_gutenberg($current_status, $post_type)
+{
+	global $post;
+    // Use your post type key instead of 'product'
+    if ($post->ID == 43) return false;
+    return $current_status;
 }
 

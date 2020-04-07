@@ -29,7 +29,12 @@
 
 
 <div class="title-group">
-					<h6>Jefe de turno:<a href="mailto:plillo@rdaelsauce.cl"> Patricio Lillo Tapia </a><a href="Tel:+56976525320"> ✆ +56976525320</a></h6>
+	<?php $value = get_field( "jefe_de_turno", 43 );
+	$jefe_nombre = $value->post_title;
+	$jefe_telefono = get_field( "telefono", $value->ID );
+	$jefe_email = get_field( "email", $value->ID );
+	?>
+					<h6>Jefe de turno:<a href="mailto:<?php echo $jefe_email; ?>"> <?php echo $jefe_nombre; ?> </a><a href="Tel:+<?php echo $jefe_telefono; ?>"> ✆ +<?php echo $jefe_telefono; ?></a></h6>
 				</div>
 
 
@@ -145,26 +150,26 @@
 						
 							<ul class="dropdown-menu" role="menu">
 								<li>
-									<a href="parqueo.php">PARQUEO SEGURO</a>
+									<a href="<?php echo home_url(); ?>/parqueo">PARQUEO SEGURO</a>
 								</li>
 								<li>
-									<a href="almacenamiento.php">ALMACENAJE COMERCIAL</a>
+									<a href="<?php echo home_url(); ?>/almacenamiento">ALMACENAJE COMERCIAL</a>
 								</li>
 								<li>
-									<a href="desrremonta.php">IZAJE DE CAMIONES</a>
+									<a href="<?php echo home_url(); ?>/desrremonta">IZAJE DE CAMIONES</a>
 								</li>
 								
 									<li>
-									<a href="cargatransito.php">CARGA EN TRÁNSITO</a>
+									<a href="<?php echo home_url(); ?>/cargatransito">CARGA EN TRÁNSITO</a>
 								</li>
 								<li>
-									<a href="procesosmenores.php">PROCESOS MENORES</a>
+									<a href="<?php echo home_url(); ?>/procesosmenores">PROCESOS MENORES</a>
 								</li>
 								<li>
-									<a href="complementarios.php">SERVICIOS COMPLEMENTARIOS</a>
+									<a href="<?php echo home_url(); ?>/complementarios">SERVICIOS COMPLEMENTARIOS</a>
 								</li>
 								<li>
-									<a href="tarifas.php">TARIFAS</a>
+									<a href="<?php echo home_url(); ?>/tarifas">TARIFAS</a>
 								</li>
 							</ul>
 					
@@ -173,7 +178,7 @@
 						<li class="main-menu-separator"></li>
 						<!-- === top menu item === -->
 						<li>
-							<a href="nosotros.php">NOSOTROS</a>
+							<a href="<?php echo home_url(); ?>/nosotros">NOSOTROS</a>
 						</li> 
 						<li class="main-menu-separator"></li>
 							<!-- === top menu item === -->
@@ -183,13 +188,13 @@
 							
 							<ul class="dropdown-menu" role="menu">
 								<li>
-									<a href="manuales.php">MANUALES</a>
+									<a href="<?php echo home_url(); ?>/manuales">MANUALES</a>
 								</li>
 									<li>
-									<a href="certificaciones.php">CERTIFICACIONES</a>
+									<a href="<?php echo home_url(); ?>/certificaciones">CERTIFICACIONES</a>
 								</li>
 								<li>
-									<a href="glosario.php">GLOSARIO</a>
+									<a href="<?php echo home_url(); ?>/glosario">GLOSARIO</a>
 								</li>
 							</ul>
 							
@@ -199,7 +204,7 @@
 						<li class="main-menu-separator"></li>
 						<!-- === top menu item === -->
 						<li class="dropdown">
-							<a class="latest" href="noticias.php">NOTICIAS</a>
+							<a class="latest" href="<?php echo home_url(); ?>/category/noticias">NOTICIAS</a>
 							
 							<!--
 							
@@ -218,7 +223,7 @@
 						<li class="main-menu-separator"></li>
 						<!-- === top menu item === -->
 						<li >
-							<a class="latest" href="#contacto">CONTACTO</a>
+							<a class="latest" href="<?php echo home_url(); ?>/contacto">CONTACTO</a>
 						</li>
 					</ul>
 				</div>

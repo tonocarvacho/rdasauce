@@ -27,14 +27,14 @@ get_header();
 				<!-- === PAGE HEADER BREADCRUMB === -->
 				<div class="page-header-breadcrumb">
 					<ol class="breadcrumb">
-						<li><a href="index.php">INICIO</a></li>
+						<li><a href="<?php echo home_url(); ?>">INICIO</a></li>
 						<li class="active">NOSOTROS</li>
 					</ol>
 				</div>
 				
 				<!-- === PAGE HEADER BUTTON === -->
 				<div class="page-header-button">
-					<a href="contacto.php">
+					<a href="<?php echo home_url(); ?>/contacto.php">
 						<div class="my-btn my-btn-primary">
 							<div class="my-btn-bg-top"></div>
 							<div class="my-btn-bg-bottom"></div>

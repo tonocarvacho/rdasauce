@@ -11,37 +11,84 @@
 ?>
 <!-- === BLOG RIGHT BAR === -->
 				
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-					<div class="blog-right-bar">
-					
+				
 						
+						<?php 
+						if ( in_category( 'documentos' ) || in_category( 'servicios' ) ) {?>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<ul class="service-menu">
+<?php foreach((get_the_category()) as $category){
+        $category = $category->name;
+        }	?>
+								<?php
+
+$args = array (
+    'category_name' => $category,
+    'post_type' => 'post',
+    'posts_per_page' => 6, 
+);
+$category_block_query = new WP_Query( $args );
+    if ( $category_block_query->have_posts() ) : 
+        ?><?php
+        while ( $category_block_query->have_posts() ) : $category_block_query->the_post(); 
+           ?> 
+			
+									<li class="active">
+										<?php the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a>' ); ?>
+									</li>
+									
+
+								          
+            <?php
+        endwhile; wp_reset_postdata(); ?> <?php
+    else: 
+    endif; 
+?>	</ul>
+							</div> 
+							
+						<?php } 
+							else { ?>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+					<div class="blog-right-bar">
 						<div class="blog-right-bar-item">
 							<h3>NOTICIAS RECIENTES</h3>
 							<div class="recent-posts">
-								<div class="recent-post">
+								<?php
+$args = array (
+    'category_name' => 'Destacados',
+    'post_type' => 'post',
+    'posts_per_page' => 2, 
+);
+$category_block_query = new WP_Query( $args );
+    if ( $category_block_query->have_posts() ) : 
+        ?>
+								<?php
+        while ( $category_block_query->have_posts() ) : $category_block_query->the_post(); 
+           ?> 
+			<div class="recent-post">
 									<div class="recent-post-image">
-										<img src="media/blog/8.jpg" alt="" />
+										<a href="<?php the_permalink() ?>">
+							<?php the_post_thumbnail('rdasauce-sidebar'); ?>
+							</a>
 									</div>
 									<div class="recent-post-title">
-										<a href="008-transito.php">Opción Pago en Efectivo en Caja Parqueo Seguro</a>
+										<a href="<?php the_permalink() ?>">
+							<?php $title = the_title('','',FALSE); echo substr($title, 0, 40); ?>...
+							</a>
+								
 									</div>
 									<div class="recent-post-date">
 										<span class="date-icon"><i class="fa fa-calendar"></i></span>
-										<a href="008-transito.php">20 Julio 2019</a>
+										<a href="<?php the_permalink(); ?>"><?php rdasauce_posted_on(); ?></a>
 									</div>
-								</div>
-								<div class="recent-post">
-									<div class="recent-post-image">
-										<img src="media/blog/9.jpg" alt="" />
-									</div>
-									<div class="recent-post-title">
-										<a href="008-transito.php">Primera Carga en Tránsito, Extraportuario El Sauce</a>
-									</div>
-									<div class="recent-post-date">
-										<span class="date-icon"><i class="fa fa-calendar"></i></span>
-										<a href="008-transito.php">31 Julio 2019</a>
-									</div>
-								</div>
+								</div>          
+            <?php
+        endwhile; wp_reset_postdata(); ?> <?php
+    else: 
+    endif; 
+?>	
+								
+								
 							</div>
 						</div>
 						
@@ -76,11 +123,15 @@
 . 
 							</p>
 						</div>
-						
-						
-						
-					</div>
-					<?php dynamic_sidebar( 'sidebar-1' ); ?>
+						</div>
+
+
 				</div>
 				<!-- === END BLOG RIGHT BAR === -->
+							<?php } ?>
+						
+						
+						
+						
+					
 
