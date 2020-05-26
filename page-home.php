@@ -561,7 +561,7 @@ $category_block_query = new WP_Query( $args );
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="home-blog-item">
 						<div class="home-blog-item-date">
-							<div class="home-blog-item-date-number">10</div>MARZO
+							<div class="home-blog-item-date-number"><?php the_time( 'j' ); ?></div><?php the_time( 'F' ); ?>
 						</div>
 						<div class="home-blog-item-image">
 						    <a href="<?php the_permalink() ?>">
@@ -570,14 +570,20 @@ $category_block_query = new WP_Query( $args );
 						</div>
 						<div class="home-blog-item-desc">
 							<div class="home-blog-item-desc-title">
-								<?php the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a>' ); ?>
+							    <a href="<?php the_permalink() ?>" rel="bookmark"><?php 
+							    $str = get_the_title();
+							    if (strlen($str) > 75)
+   $str = substr($str, 0, 75) . '...';
+   echo $str;
+   ?></a>
+							
 							</div>
 							<div class="home-blog-item-desc-info">
 								<a href="<?php the_permalink() ?>"><?php rdasauce_posted_on(); ?></a>
 							
 							</div>
 							<div class="home-blog-item-desc-text">
-								<?php echo get_excerpt(70); ?>
+								<?php echo get_excerpt(90); ?>
 							</div>
 						</div>
 					</div>

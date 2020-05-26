@@ -43,3 +43,57 @@ Designed By: Vadzim Liashkevich
 .title-group {
     margin-bottom: 0px;
 }
+
+.home-blog-item-desc {
+    padding: 25px 25px;
+}
+
+.main-menu .navbar-nav>li>a.asesoria {
+    padding: 10px;
+    margin-top: 7px;
+    margin-left: 15px;
+    background-color: #ff8840 !important
+}
+
+.main-navbar-1 {
+    padding-top: 30px;
+}
+
+.barrablanca {
+	display: flex;
+	margin: auto;
+	max-width: 1150px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+}
+
+.barrablanca span{
+	color: black !important
+}
+
+.barrablanca a:visited {
+	color: #ff8840 !important
+}
+.barrablanca strong {
+	display: inline-block;
+}
+.mgr {
+	margin-right: 10px 
+}
+
+
+
+@media screen and (max-width: 600px) {
+	.main-slider h2 {
+    padding-top: 70px;
+}
+  .main-slider .my-btn-primary {
+   
+    margin-top: 20px;
+}
+}
+
+a.asesoriabtn {
+	color: #ff8840 !important
+}

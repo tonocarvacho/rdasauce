@@ -12,7 +12,7 @@
 
 <div class="blog-item blog-item-mark">
 	<div class="blog-item-date">
-		<div class="blog-item-date-number">10</div>MARZO
+		<div class="blog-item-date-number"><?php the_time( 'j' ); ?></div><?php the_time( 'F' ); ?>
 	</div>
 	<div class="blog-item-image">
 		<a href="<?php the_permalink(); ?>"><?php rdasauce_post_thumbnail(); ?>

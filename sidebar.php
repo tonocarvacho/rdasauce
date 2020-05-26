@@ -96,9 +96,9 @@ $category_block_query = new WP_Query( $args );
 							<h3>ENLACES</h3>
 							<ul class="blog-categories">
 								<li class="first">
-									<a href="https://www.aduana.cl/aduana/site/edic/base/port/inicio.php">Aduana</a>
+									<a href="https://www.aduana.cl/">Aduana</a>
 								</li>
-								<li class="active">
+								<li class="">
 									<a href="http://www.pasosfronterizos.gov.cl/">Pasos Fronterizos</a>
 								</li>
 								<li>
@@ -108,7 +108,7 @@ $category_block_query = new WP_Query( $args );
 									<a href="https://www.sag.gob.cl/">Servicio Agrícola y Ganadero</a>
 								</li>
 								<li>
-									<a href="http://www.meteochile.cl/PortalDMC-web/index.x.php">Meteorología</a>
+									<a href="http://www.meteochile.cl/">Meteorología</a>
 								</li>
 								<li class="latest">
 									<a href="https://www.puertoterrestre.cl">Puerto Terrestre</a>

@@ -220,16 +220,15 @@
 			</li>
 			
 			<!-- === SLIDE MENU ITEM === -->	
-			<li> 
-				<a href="nosotros.php">NOSOTROS</a>
-			</li>
+			
 			
 			<!-- === SLIDE MENU ITEM === -->	
 			<li> 
-				<a href="manuales.php">DOCUMENTOS <i class="fa fa-plus arrow"></i></a>
+				<a href="manuales.php">EMPRESA <i class="fa fa-plus arrow"></i></a>
 				
 				<!-- === slide menu child === -->	
 				<ul class="slide-menu-child">
+					<li><a href="nosotros.php">NOSOTROS</a></li>
 					<li><a href="manuales.php">MANUALES</a></li>
 					<li><a href="certificaciones.php">CERTIFICACIONES</a></li>
 					<li><a href="glosario.php">GLOSARIO</a></li>
@@ -245,6 +244,9 @@
 			<!-- === SLIDE MENU ITEM === -->	
 			<li>
 				<a href="contacto.php">CONTACTO</a>
+			</li>
+			<li>
+				<a href="contacto.php" class="asesoriabtn">SOLICITAR ASESORIA</a>
 			</li>
 			
 		</ul>

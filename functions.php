@@ -375,7 +375,7 @@ function prefix_disable_gutenberg($current_status, $post_type)
 {
 	global $post;
     // Use your post type key instead of 'product'
-    if ($post->ID == 43) return false;
+    if ($post->ID == 26) return false;
     return $current_status;
 }
 

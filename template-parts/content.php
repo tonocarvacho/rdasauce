@@ -15,8 +15,7 @@
 						<!-- === BLOG ITEM === -->
 						<div class="single-post">
 							<div class="single-post-date">
-								<div class="single-post-date-number">02</div>OCT
-							</div>
+								<div class="single-post-date-number"><?php the_time( 'j' ); ?></div><?php the_time( 'F' ); ?></div>
 							<div class="single-post-image">
 								<?php rdasauce_post_thumbnail(); ?>
 							</div>
