@@ -14,6 +14,7 @@ Designed By: Vadzim Liashkevich
 
  /*-- FONT AWESOME --*/
 @import url('font-awesome.min.css');
+@import url('solid.css');
 
  /*-- FLATICONS --*/
 @import url('../fonts/flaticon/flaticon.css');
@@ -96,4 +97,443 @@ Designed By: Vadzim Liashkevich
 
 a.asesoriabtn {
 	color: #ff8840 !important
+}
+
+.home2stats {
+	background-color: #e2e2e2;
+	padding: 50px 0;
+	background-image: url(../img/fondogris.jpg);
+background-repeat: repeat;
+}
+
+.contenedor {
+	max-width: 1100px;
+	width: 85%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px auto 0px auto;
+	text-align: center;
+}
+
+.contenedorfull {
+    max-width: 1100px;
+    width: 85%;
+    margin: 0px auto 0px auto;
+}
+
+.destacado {
+
+}
+
+.destacado img {
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+.my-btn {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.destacado .my-btn {
+    text-align: center;
+    width: 100%;
+}
+
+.destacado .my-btn span{
+    color: #3e4f59;
+    font-style: italic;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 767px) {
+	.destacado {
+		width: 30.66666%
+
+}
+.mitad {
+	width: 48%
+}
+
+
+}
+
+.video-section {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: black;
+}
+
+.video-section video {
+margin: 0px; 
+width: 1420px; 
+height: 500px;
+    opacity: 0.3;
+}
+
+.video-section h2 {
+font-weight: normal;
+font-size: 34px
+}
+
+.video-section h3 {
+font-weight: 400;
+font-size: 30px;
+}
+
+#home-stats h2 {
+font-weight: normal;
+}
+
+.texto-video {
+	position: absolute;
+	color:white;
+	top: 130px;
+left: 0;
+right: 0;
+	text-align: center;
+	z-index: 999;
+}
+
+.home2stats {
+    padding: 20px 0 40px;
+}
+
+.stat-item {
+    padding: 15px 30px;
+}
+
+.destacados {
+    padding-top: 15px;
+    padding-bottom: 55px;
+}
+
+.destacados h2 {
+font-size: 30px;
+font-weight: 300
+}
+
+.destacados.naran h3{
+font-size: 24px;
+font-weight: 600;
+text-transform: uppercase;
+margin-bottom: 5px;
+}
+
+.titulostats {
+	margin-top: 30px;
+text-align: center;
+}
+
+
+.naranja {
+color: #ff8840;
+}
+
+.destacados p {
+font-size: 18px
+}
+
+.servfondo {
+    padding: 50px 0;
+}
+
+.empresa {
+    background-color: #e2e2e2;
+    padding: 50px 0;
+    background-image: url(../img/fondogris.jpg);
+    background-repeat: repeat;
+}
+
+.empresa .my-btn {
+    text-align: center;
+    width: 100%;
+    margin-top: 35px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.page-rda.visita-virtual {
+   background: url(../media/main-slider/5.jpg) center center no-repeat;
+    padding: 130px 0 ;
+   
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.montserrat {
+	font-family: Montserrat;
+}
+
+
+.nuestrosserv {
+	font-size: 18px;
+	font-weight: 600
+}
+
+.delgado {
+	font-weight: normal;
+}
+
+.mitad h3 {
+	font-weight: 400
+}
+.visit {
+	text-align: center;
+	width: 100%;
+	font-weight: 400;
+}
+ 
+ .barrablanca h6{
+ 	font-size: 14px;
+ 	
+ }
+
+  .barrablanca strong{
+ 	font-size: 14px;
+ 	
+ }
+
+.subtitle {
+    font-size: 16px;
+}
+
+p { 
+font-size: 16px }
+
+.frase p{
+	font-size: 20px
+}
+
+.my-btn .my-btn-text {
+    text-align: center;
+}
+
+.img-icon.ctc-analytics {
+	height: 60px;
+}
+
+.page-rda.visita-virtual {
+    background: url(../media/main-slider/6.jpg) center center no-repeat;
+}
+
+.visitlink {
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 1);
+}
+
+.landing {
+    padding: 50px 0;
+}
+
+.fraselanding {
+    background-color: #1f2a31;
+    background-image: none;
+    padding: 20px 0;
+
+}
+.fraselanding h3 {
+    font-size: 28px;
+    color: white;
+}
+
+.landinglist li {
+    list-style: none;
+    font-size: 22px
+}
+
+.landinglist i {
+    color: #ff8840;
+    font-size: 24px
+}
+.landinglist.liuno i {
+    font-size: 28px
+}
+
+.landinglist ul {
+    list-style: none;text-align: left;
+}
+
+.liuno li{
+    font-size: 23px;
+    margin-bottom: 15px
+}
+
+.documentosseccion {
+    padding: 40px 0;
+    
+}
+
+.documentosseccion h3 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+    margin: 25px 0;
+}
+
+.documentosseccion li {
+    margin-bottom: 20px;
+}
+
+.oculto {
+    display: none;
+}
+
+.btnlanding {
+    display: flex;
+    justify-content: center;
+    margin: 45px 0;
+    font-size: 28px;
+}
+
+.btnlanding .my-btn-text{
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.landcont {
+    max-width: 1100px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto 0px auto;
+    position: absolute;
+    top: 50px;
+    left: 0;
+right: 0;
+color: white !important;
+}
+
+.fondoform {
+    
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.80);
+    border: 0px solid #000000;
+    padding: 25px;
+}
+
+.fondoform h3 {
+margin: 0 0 15px 0;
+color:  #3e4f59;
+font-size: 22px;
+font-weight: 700;
+text-align: center;
+}
+
+.fondoform p {
+font-size: 22px;
+color: #3e4f59;
+text-align: center;
+font-weight: 500;
+margin-bottom: 15px
+}
+
+.fondoform input {
+    border: 1px solid #d5dadf;   
+    background: #fff;
+    padding: 10px;
+    font-size: 14px;
+    color: #3e4f59;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.fondoform .my-btn {
+    width: 100%;
+    text-align: center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #999999;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #999999;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #999999;
+}
+
+.banderaslide {
+    width: 175px
+}
+
+.barrablanca.landinghead {
+    padding: 7px 0;
+text-align: center;
+justify-content: center;
+}
+
+.barrablanca.landinghead a{
+    font-size: 16px;
+font-weight: normal;
+margin: 0 10px;
+}
+
+#contacto h3 {
+    text-align: center;
+    font-weight: normal;
+}
+
+#contacto .fondoform {
+    margin-top: 40px
+}
+
+#contacto.def-section {
+    padding-top: 40px;
+}
+
+.video-section img.fondo {
+margin: 0px; 
+width: 100%; 
+    opacity: 0.3;
+}
+
+.claro {
+    color: white
+}
+
+.claro span {
+    text-decoration: underline;
+    font-size: 18px
+}
+
+.icondocu {
+    width: 55px;
+    margin-right: 15px;
+    min-width: 55px;
+}
+
+.icondocu img{
+    width: 100%;
+}
+
+.listadocus li {
+    display: flex;
+align-items: center;
+margin-bottom: 30px;
+}
+
+.fraselanding .claro:hover {
+  
+}
+
+#btndocuscontenedor:hover {
+    cursor: pointer;
+    background-color: #ff8840;
+}
+
+.footer-2-links ul {
+    margin: 0;
+
 }

@@ -34,7 +34,7 @@
 	$jefe_telefono = get_field( "telefono", $value->ID );
 	$jefe_email = get_field( "email", $value->ID );
 	?>
-					<h6><strong class="mgr">Jefe de turno: </strong><strong><a href="Tel:+<?php echo $jefe_telefono; ?>"> ✆ </a> <a href="mailto:<?php echo $jefe_email; ?>"> <?php echo $jefe_nombre; ?> </a></strong></h6>
+					<h6 class="montserrat"><strong class="mgr">Jefe de turno: </strong><strong><a href="Tel:+<?php echo $jefe_telefono; ?>"> ✆ </a> <a href="mailto:<?php echo $jefe_email; ?>"> <?php echo $jefe_nombre; ?> </a></strong></h6>
 					<div>
 						<strong><a href="" class="mgr"><i class="fa fa-phone"></i> <span>+56 34 237 3900</span></a></strong>
 						 <strong><a href=""><i class="fa fa-envelope"></i> <span>informaciones@rdaelsauce.cl</span></a></strong>

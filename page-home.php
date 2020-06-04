@@ -330,7 +330,7 @@ get_header();
 						</div>
 						<h3>parqueo<br>seguro</h3>
 						<div class="service-text">
-							<p>Aparcamiento de aquellos vehículos de<br>transporte que precisen permanecer en el<br>recinto de depósito aduanero, opción de pago<br>en efectivo, vigilacia las 24hrs del día.</p>
+							<p>Aparcamiento de aquellos vehículos de transporte que precisen permanecer en el recinto de depósito aduanero, opción de pago en efectivo, vigilacia las 24hrs del día.</p>
 						</div>
 						<div class="service-button">
 							<a href="parqueo.php">
@@ -361,7 +361,7 @@ get_header();
 						</div>
 						<h3>izaje de<br>camiones</h3>
 						<div class="service-text">
-							<p>Manipulación de camiones que son<br>transportados en condición de "remonta",<br>que son separados para su posterior<br>retiro de forma individual.</p>
+							<p>Manipulación de camiones<br>que son transportados en condición de "remonta", que son separados para su posterior retiro de forma individual.</p>
 						</div>
 						<div class="service-button">
 							<a href="desrremonta.php">
@@ -388,7 +388,7 @@ get_header();
 						</div>
 						<h3>almacenaje<br>comercial</h3>
 						<div class="service-text">
-							<p>Custodia que se brinda a la carga de<br> importación u otra destinación aduanera,<br>hasta su entrega a los consignatarios o<br>a quienes representen sus derechos.</p>
+							<p>Custodia que se brinda a la carga de importación u otra destinación aduanera, hasta su entrega a los consignatarios o a quienes representen sus derechos.</p>
 						</div>
                         <div class="service-button">
 							<a href="almacenamiento.php">
@@ -415,7 +415,7 @@ get_header();
 						</div>
 						<h3>CARGA EN<br>TRÁNSITO</h3>
 						<div class="service-text">
-							<p>Consigue mejores tarifas y mayores <br> oportunidades para retiro desde origen por<br> operar con DTI almanejar mayores volúmenes <br>de carga para el tránsito internacional.</p>
+							<p>Consigue mejores tarifas y mayores oportunidades para retiro desde origen por  operar con DTI almanejar mayores volúmenes de carga para el tránsito internacional.</p>
 						</div>
 						<div class="service-button">
 							<a href="cargatransito.php">

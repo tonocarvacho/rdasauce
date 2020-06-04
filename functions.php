@@ -89,7 +89,10 @@ endif;
 add_action( 'after_setup_theme', 'rdasauce_setup' );
 
 
-
+function custom_add_google_fonts() {
+ wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap', false );
+ }
+ add_action( 'wp_enqueue_scripts', 'custom_add_google_fonts' );
 /**
  * Register custom fonts with translator.
  */
