@@ -24,7 +24,9 @@
 								<a href="#"><?php rdasauce_posted_by(); ?></a>
 								<span class="date-icon"><i class="fa fa-calendar"></i></span>
 								<a href=""><?php rdasauce_posted_on(); ?></a>
+								
 							</div>
+
 							<div class="single-post-title">
 								<?php the_title( '<h3><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' ); ?>
 							</div>
@@ -51,4 +53,6 @@
 						
 							
 							</div>
+							<h5>Comparte esta Noticia en Redes Sociales:</h5>
+							<?php echo do_shortcode('[addtoany]'); ?>
 							</div>	

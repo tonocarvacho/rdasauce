@@ -84,36 +84,13 @@ get_header();
 				</div>
 				
 					<!-- === CONTACTS FORM === -->
-				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-					<div class="contacts-form row">
-						<div class="send-result"></div>
-						<form name="contact-form" id="contact-form" method="POST" action="javascript:void(null);" onsubmit="sendmail_2();">
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 contacts-form-item">
-								<input type="text" name="contact-name" placeholder="Nombre Completo" />
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 contacts-form-item">
-								<input type="text" name="contact-email" placeholder="E-mail" />
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 contacts-form-item">
-								<input type="text" name="contact-phone" placeholder="Teléfono" />
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 contacts-form-item">
-								<input type="text" name="contact-site" placeholder="Página Web" />
-							</div>
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contacts-form-item">
-								<textarea name="contact-message" placeholder="¿Como te podemos ayudar?"></textarea>
-							</div>
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contacts-form-item contacts-form-button">
-								<button><span class="my-btn my-btn-grey">
-									<span class="my-btn-bg-top"></span>
-									<span class="my-btn-bg-bottom"></span>
-									<span class="my-btn-text">
-										ENVIAR MENSAJE
-									</span>
-								</span></button>
-							</div>
-						</form>
-					</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<div class="fondoform marginauto formmensaje">
+                          <h3 class="titform"><i class="fa fa-check naranja"></i> Envíenos sus consultas</h3>
+                          <p class="subtform">Te contactaremos a la brevedad.</p>
+                          <?php echo do_shortcode( '[contact-form-7 id="175" title="Formulario de contacto 3"]' ); ?>
+                  
+            </div>
 				</div>
 				
 				
@@ -150,7 +127,7 @@ get_header();
 						<h3>TELÉFONO | E-MAIL</h3>
 					</div>
 					<div class="contact-detail-text">
-						+ 56 34 2373900<br>informaciones@rdaelsauce.cl
+						+56 9 5788 6514<br>informaciones@rdaelsauce.cl
 					</div>
 				</div>
 				
@@ -178,9 +155,7 @@ get_header();
 		CONTACTS MAP
 	============================== -->
     <div class="contact-map" id="contact-map">
-        map = new google.maps.Map(document.getElementById('contact-map'), {
-          center: {lat: -32.8415713, lng: -70.539112},
-          zoom: 8
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13408.600963330335!2d-70.5433256!3d-32.8412735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6fd43c6ffd815330!2sAlmac%C3%A9n%20Extraportuario%20El%20Sauce%20S.A.!5e0!3m2!1sen!2scl!4v1591980065354!5m2!1sen!2scl" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 	</div>
 	<!-- =========================
 		END CONTACTS MAP

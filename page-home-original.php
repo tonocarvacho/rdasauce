@@ -1,6 +1,6 @@
 <?php
 /**
- *Template Name: Page-Home
+ *Template Name: Page-Home-ori
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -34,22 +34,24 @@ get_header();
         				<h2 class="sp-layer"
                             data-position="rightCenter" data-horizontal="15" data-vertical="-92"
         					data-show-transition="left" data-hide-transition="left" data-show-delay="200" data-hide-delay="200">
-        					Ayudamos A Nacionalizar Su Mercancia
+        					SOMOS TU ALTERNATIVA LOGÍSTICA EN
         				</h2>
         
         				<h2 class="sp-layer color-primary"
                             data-position="rightCenter" data-horizontal="15" data-vertical="-40"
         					data-show-transition="left" data-hide-transition="left" data-show-delay="400" data-hide-delay="400">
-        					Almacenaje, Bodegaje & Asesoria.
+        					IMPORTACIÓN EXPORTACIÓN Y TRÁNSITO
         				</h2>
             
-                        <a class="sp-layer main-button" href="tarifas"
+                        <a class="sp-layer main-button" href="tarifas.php"
                             data-position="rightCenter" data-horizontal="15" data-vertical="55"
             				data-show-transition="left" data-hide-transition="left" data-show-delay="600" data-hide-delay="600">
 							<div class="my-btn my-btn-primary">
 								<div class="my-btn-bg-top"></div>
 								<div class="my-btn-bg-bottom"></div>
-								<div class="my-btn-text">CONTACTARNOS</div>
+								<div class="my-btn-text">
+									&ensp;&emsp;VER  TARIFAS
+								</div>
 							</div>
 						</a>
                         
@@ -107,7 +109,7 @@ get_header();
         					Parqueo vigilado 24/7
         				</h2>
             
-                        <a class="sp-layer main-button" href="parqueo"
+                        <a class="sp-layer main-button" href="parqueo.php"
                             data-position="rightCenter" data-horizontal="15" data-vertical="55"
             				data-show-transition="down" data-hide-transition="down" data-show-delay="200" data-hide-delay="200">
 							<div class="my-btn my-btn-primary">
@@ -178,7 +180,7 @@ get_header();
         					SERVICIOS DE ALMACENAJE
         				</h2>
             
-                        <a class="sp-layer main-button" href="almacenamiento"
+                        <a class="sp-layer main-button" href="almacenamiento.php"
                             data-position="rightCenter" data-horizontal="15" data-vertical="55"
             				data-show-transition="down" data-hide-transition="down" data-show-delay="200" data-hide-delay="200">
 							<div class="my-btn my-btn-primary">
@@ -296,22 +298,12 @@ get_header();
 	<!-- =========================
 		END MAIN SLIDER
 	============================== -->
-	<div id="pregfreq" class="def-section home2stats fraselanding formuhome" >
-		<div class="title-group ">
-			<div class="iconpreg"><i class="fas fa-headset"></i><img class="headset" src="<?php echo bloginfo('template_url');?>/img/headset-solid.png"></div>
-					<h3 class="montserrat delgado">Ingresa tus datos para solicitar una<br>
-						<strong>Video llamada</strong> con nuestros profesionales.</h3>
-						<!--<p class="claro"><i class="fa fa-arrow-right"></i> <span>Contactarse</span></p>-->
-				<?php echo do_shortcode( '[contact-form-7 id="173" title="Formulario de contacto 2"]' ); ?>
-				</div>
-		
-		
-	</div>
+
 	
 	<!-- =========================
 		SERVICES
 	============================== -->
-    <section class="def-section home-services margintop">
+    <section class="def-section home-services">
         
         
             <BR>
@@ -341,7 +333,7 @@ get_header();
 							<p>Aparcamiento de aquellos vehículos de transporte que precisen permanecer en el recinto de depósito aduanero, opción de pago en efectivo, vigilacia las 24hrs del día.</p>
 						</div>
 						<div class="service-button">
-							<a href="parqueo">
+							<a href="parqueo.php">
 								<div class="my-btn my-btn-default">
 									<div class="my-btn-bg-top"></div>
 									<div class="my-btn-bg-bottom"></div>
@@ -372,7 +364,7 @@ get_header();
 							<p>Manipulación de camiones<br>que son transportados en condición de "remonta", que son separados para su posterior retiro de forma individual.</p>
 						</div>
 						<div class="service-button">
-							<a href="desrremonta">
+							<a href="desrremonta.php">
 								<div class="my-btn my-btn-default">
 									<div class="my-btn-bg-top"></div>
 									<div class="my-btn-bg-bottom"></div>
@@ -399,7 +391,7 @@ get_header();
 							<p>Custodia que se brinda a la carga de importación u otra destinación aduanera, hasta su entrega a los consignatarios o a quienes representen sus derechos.</p>
 						</div>
                         <div class="service-button">
-							<a href="almacenamiento">
+							<a href="almacenamiento.php">
 								<div class="my-btn my-btn-default">
 									<div class="my-btn-bg-top"></div>
 									<div class="my-btn-bg-bottom"></div>
@@ -426,7 +418,7 @@ get_header();
 							<p>Consigue mejores tarifas y mayores oportunidades para retiro desde origen por  operar con DTI almanejar mayores volúmenes de carga para el tránsito internacional.</p>
 						</div>
 						<div class="service-button">
-							<a href="cargatransito">
+							<a href="cargatransito.php">
 								<div class="my-btn my-btn-default">
 									<div class="my-btn-bg-top"></div>
 									<div class="my-btn-bg-bottom"></div>
@@ -448,7 +440,7 @@ get_header();
 				
 				<div class="title-group">
 				    
-				    <a href="parqueo"><h5>REVISA AQUÍ TODOS NUESTROS SERVICIOS</h5></a></div>
+				    <a href="parqueo.php"><h5>REVISA AQUÍ TODOS NUESTROS SERVICIOS</h5></a></div>
 				   
 				</div>
 
@@ -607,7 +599,7 @@ $category_block_query = new WP_Query( $args );
 				
 				<!-- === BLOG READ MORE BUTTON === -->
 				<div class="row home-blog-more">
-					<a href="noticias"><div class="my-btn my-btn-primary">
+					<a href="noticias.php"><div class="my-btn my-btn-primary">
 						<div class="my-btn-bg-top"></div>
 						<div class="my-btn-bg-bottom"></div>
 						<div class="my-btn-text">
@@ -691,13 +683,36 @@ $category_block_query = new WP_Query( $args );
 				</div>
 				
 				<!-- === CONTACTS FORM === -->
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<div class="fondoform marginauto formmensaje">
-                          <h3 class="titform"><i class="fa fa-check naranja"></i> Envíenos sus consultas</h3>
-                          <p class="subtform">Te contactaremos a la brevedad.</p>
-                          <?php echo do_shortcode( '[contact-form-7 id="175" title="Formulario de contacto 3"]' ); ?>
-                  
-            </div>
+				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+					<div class="contacts-form row">
+						<div class="send-result"></div>
+						<form name="contact-form" id="contact-form" method="POST" action="javascript:void(null);" onsubmit="sendmail_2();">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 contacts-form-item">
+								<input type="text" name="contact-name" placeholder="Nombre Completo" />
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 contacts-form-item">
+								<input type="text" name="contact-email" placeholder="E-mail" />
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 contacts-form-item">
+								<input type="text" name="contact-phone" placeholder="Teléfono" />
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 contacts-form-item">
+								<input type="text" name="contact-site" placeholder="Página Web" />
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contacts-form-item">
+								<textarea name="contact-message" placeholder="¿Como te podemos ayudar?"></textarea>
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contacts-form-item contacts-form-button">
+								<button><span class="my-btn my-btn-grey">
+									<span class="my-btn-bg-top"></span>
+									<span class="my-btn-bg-bottom"></span>
+									<span class="my-btn-text">
+										ENVIAR MENSAJE
+									</span>
+								</span></button>
+							</div>
+						</form>
+					</div>
 				</div>
 				
 				
@@ -736,7 +751,7 @@ $category_block_query = new WP_Query( $args );
 						<h3>TELÉFONO | E-MAIL</h3>
 					</div>
 					<div class="contact-detail-text">
-						+56 9 5788 6514<br>informaciones@rdaelsauce.cl
+						+ 56 34 2373900<br>informaciones@rdaelsauce.cl
 					</div>
 				</div>
 				
@@ -765,7 +780,9 @@ $category_block_query = new WP_Query( $args );
 		CONTACTS MAP
 	============================== -->
     <div class="contact-map" id="contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13408.600963330335!2d-70.5433256!3d-32.8412735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6fd43c6ffd815330!2sAlmac%C3%A9n%20Extraportuario%20El%20Sauce%20S.A.!5e0!3m2!1sen!2scl!4v1591980065354!5m2!1sen!2scl" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        map = new google.maps.Map(document.getElementById('contact-map'), {
+          center: {lat: -32.8415713, lng: -70.539112},
+          zoom: 8
 	</div>
 	<!-- =========================
 		END CONTACTS MAP

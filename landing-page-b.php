@@ -16,18 +16,22 @@ get_header('landing');
 			<div class="landcont">
 				<div class="mitad">
 							
-					
+					<div class="logo-image"><a href="index.php">
+						<img src="<?php echo bloginfo('template_url');?>/img/logo2.png" alt="" /></a>
+					</div>
+					<div class="logo-text">
+						EXTRAPORTUARIO<span class="color-primary"><br>El Sauce</span>
+					</div>
 				
 						<h3 class="montserrat delgado">BRINDAMOS <strong>ASESORÍA TÉCNICA, COMERCIAL Y OPERACIONAL</strong> EN TUS PROYECTOS DE EXPORTACIÓN A CHILE.</h3>
 						<img class="banderaslide" src="<?php echo bloginfo('template_url');?>/img/landing/banderas.png" alt="" />
 
 						
 					</div>
-					<div class="fondoform ">
+					<div class="fondoform">
                           <h3 class="titform"><i class="fa fa-check naranja"></i> Obtén Asesoría Profesional</h3>
-                          <p class="subtform">Envíanos tus datos<br>y te contactaremos sin costo</p>
-                          <?php echo do_shortcode( '[contact-form-7 id="164" title="Formulario de contacto 1"]' ); ?>
-            <!--  <form>
+                          <p>Envíanos tus datos<br>y te contactaremos sin costo</p>
+              <form>
                 
                   
                 <div class="">
@@ -50,18 +54,18 @@ get_header('landing');
                 
            
                 
-              </form>-->
+              </form>
                   
             </div>
 				</div>
 	 </section>
 	    <section class="def-section landing">
         
-<div class="contenedor sololanding reverse">
-	
+<div class="contenedor">
+	<img class="mitad" src="<?php echo bloginfo('template_url');?>/img/landing/360.png">
         	<div class="mitad"><h2 class="delgado">Integramos la cadena logística con una <strong>mirada de 360º</strong> en comercio exterior y comercio internacional </h2>
         		
-						<div class="my-btn my-btn-primary contactarse solodesktop">
+						<div class="my-btn my-btn-primary">
 								<div class="my-btn-bg-top"></div>
 								<div class="my-btn-bg-bottom"></div>
 								<div class="my-btn-text">
@@ -69,14 +73,6 @@ get_header('landing');
 								</div>
 							</div>
         	</div>
-        	<img class="mitad loop" src="<?php echo bloginfo('template_url');?>/img/landing/asesorialogistica.jpg">
-        	<div class="my-btn my-btn-primary contactarse solomovil">
-								<div class="my-btn-bg-top"></div>
-								<div class="my-btn-bg-bottom"></div>
-								<div class="my-btn-text">
-									 COMENZAR TU <strong>EXPORTACIÓN</strong> A CHILE
-								</div>
-							</div>
 
         </div>
         
@@ -87,8 +83,8 @@ get_header('landing');
 	======================================== -->
 	<div class="def-section home2stats fraselanding" >
 		<div class="title-group">
-					<h3 class="montserrat delgado">Resolvemos las necesidades de cada cliente con <strong>precios competitivos y optimizando</strong> al máximo los tiempos</h3>
-					
+					<h3 class="montserrat delgado">Resolvemos las necesidades de cada cliente con <strong>precios<br> competitivos y optimizando</strong> al máximo los tiempos</h3>
+					<br>
 				
 				</div>
 		
@@ -99,13 +95,13 @@ get_header('landing');
 	======================================== -->
 	    <section class="def-section empresa landinglist liuno">
         
-<div class="contenedor sololanding">
+<div class="contenedor">
 	<img class="mitad" src="<?php echo bloginfo('template_url');?>/img/landing/asesoria.jpg">
-        	<div class="mitad frase"><ul class="sinmargen listaticket">
-        		<li><i class="fa fa-check"></i> <span>ENFOQUE DOOR TO DOOR</span></li>
-        		<li><i class="fa fa-check inlineblock"></i> <span class="inlineblock">TRANSPARENCIA EN LA INFORMACIÓN</span></li>
-        		<li><i class="fa fa-check"></i> <span>TOMA DE DECISIONES OPORTUNAS</span></li>
-        		<li><i class="fa fa-check"></i> <span>PRECIOS COMPETITIVOS</span></li>
+        	<div class="mitad frase"><ul>
+        		<li><i class="fa fa-check"></i> ENFOQUE DOOR TO DOOR</li>
+        		<li><i class="fa fa-check"></i> TRANSPARENCIA EN LA INFORMACIÓN</li>
+        		<li><i class="fa fa-check"></i> TOMA DE DESICIONES OPORTUNAS</li>
+        		<li><i class="fa fa-check"></i> PRECIOS COMPETITIVOS</li>
         	</ul>
         		
 						
@@ -120,7 +116,7 @@ get_header('landing');
 	======================================== -->
 	<div id="btndocuscontenedor" class="def-section home2stats fraselanding" >
 		<div class="title-group">
-					<h3 class="montserrat delgado"><strong>CLICK AQUÍ</strong> Y VISUALIZA LOS <strong> DOCUMENTOS QUE NECESITAS</strong>
+					<h3 class="montserrat delgado"><strong>CLICK AQUÍ</strong> Y VISUALIZA LOS <strong><br>DOCUMENTOS QUE NECESITAS</strong>
 PARA ENTRAR A CHILE</h3>
 					<br>
 					<p id="btndocus" class="claro"><span>Ver Documentos</span><br><i class="fa fa-arrow-down"></i></p>
@@ -135,13 +131,13 @@ PARA ENTRAR A CHILE</h3>
 	======================================== -->
 	<section id="listadocus" class="landinglist documentosseccion oculto">
 		<div class="contenedorfull">
-				<h3 class="montserrat delgado">1. DOCUMENTOS NECESARIOS PARA LA <strong>EXPORTACIÓN A CHILE</strong>: </h3>
+				<h3 class="montserrat delgado">1. DOCUMENTOS NECESARIOS Para La <strong>Exportación A Chile</strong>: </h3>
 				<ul class="listadocus">
 		        		<li><div class="icondocu"><img  src="<?php echo bloginfo('template_url');?>/img/landing/embarque.png"></div> <span><strong>Conocimiento de Embarque en original</strong>, que acredite el dominio de la mercancía por parte del consignatario.</span></li>
 
 		        		<li><img class="icondocu" src="<?php echo bloginfo('template_url');?>/img/landing/factura.png"> <span><strong> Factura comercial original</strong>, que acredite la mercancía objeto de compraventa y sus valores.</span></li>
 
-		        		<li><img class="icondocu" src="<?php echo bloginfo('template_url');?>/img/landing/certificado.png"> <span> <strong>Certificado de Seguro</strong> con el monto de la prima pagada (cláusula CIF).</span></li>
+		        		<li><img class="icondocu" src="<?php echo bloginfo('template_url');?>/img/landing/certificado.png"> <span><strong>Certificado de Seguro</strong>con el monto de la prima pagada (cláusula CIF).</span></li>
 
 		        		<li><img class="icondocu" src="<?php echo bloginfo('template_url');?>/img/landing/declaracion.png"> <span><strong>Declaración Jurada</strong> del importador sobre el precio de las mercancías, formulario que entrega el agente de aduanas.</span></li>
 
@@ -168,7 +164,6 @@ PARA ENTRAR A CHILE</h3>
 
 
 	</section>
-	<div id="contactarse"></div>
 	<div id="profesionales" class="def-section home2stats fraselanding oculto" >
 		<div class="title-group">
 					<h3 class="montserrat delgado"><strong>Solicita Asesoría</strong> Con Nuestros Profesionales</h3>
@@ -198,10 +193,33 @@ hasta grandes empresas </h3>
 				
 				<!-- === CONTACTS FORM === -->
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<div class="fondoform marginauto">
+					<div class="fondoform">
                           <h3 class="titform"><i class="fa fa-check naranja"></i> Obtén Asesoría Profesional</h3>
-                          <p class="subtform">Envíanos tus datos<br>y te contactaremos sin costo</p>
-                          <?php echo do_shortcode( '[contact-form-7 id="164" title="Formulario de contacto 1"]' ); ?>
+                          <p>Envíanos tus datos<br>y te contactaremos sin costo</p>
+              <form>
+                
+                  
+                <div class="">
+                    <input type="text" placeholder="Nombre">
+                  </div>
+                
+                  <div class="">
+                    <input type="text" placeholder="Email">
+                  </div>
+                
+                <div class="">
+                    <input type="number" placeholder="Teléfono">
+                  </div>
+                <div class="my-btn my-btn-primary">
+								<div class="my-btn-bg-top"></div>
+								<div class="my-btn-bg-bottom"></div>
+								<button type="submit" class="my-btn-text top15"><i class="fa fa-arrow-right"></i> SOLICITAR ASESORÍA</button>
+							</div>
+                  
+                
+           
+                
+              </form>
                   
             </div>
 				</div>
@@ -214,9 +232,8 @@ hasta grandes empresas </h3>
 	<!-- ===================================
 		SECTION STATS
 	======================================== -->
-	<div id="pregfreq" class="def-section home2stats fraselanding" >
+	<div class="def-section home2stats fraselanding" >
 		<div class="title-group">
-			<div class="iconpreg"><i class="fa fa-list-ul"></i></div>
 					<h3 class="montserrat delgado">REVISA AQUÍ NUESTRAS<br>
 						<strong>PREGUNTAS FRECUENTES</strong></h3>
 						<!--<p class="claro"><i class="fa fa-arrow-right"></i> <span>Contactarse</span></p>-->
@@ -230,18 +247,18 @@ hasta grandes empresas </h3>
 	======================================== -->
 	<section class="landinglist documentosseccion">
 		<div class="contenedorfull">
-				<ul class="sinmargen" >
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong> ¿Quiénes pueden importar o exportar a Chile?</strong><br>
-		        		<span class="oculto">Las personas naturales o jurídicas que tengan RUT e iniciación de actividades ante el Servicio de Impuestos Internos.</span></li>
+				<ul>
+		        		<li><i class="fa fa-check"></i> <strong> ¿Quién puede exportar a Chile?</strong><br>
+		        		<strong class="naranja">R.</strong> Conocimiento de Embarque en original</strong>, que acredite el dominio de la mercancía por parte del consignatario.</li>
 
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué tipos de cargas puedo mover?</strong><br>
-		        		<span class="oculto">Puede importarse cualquier mercancía, salvo aquellas que se encuentren expresamente prohibidas por la legislación vigente. En ocasiones, el producto a importar, por su naturaleza, puede estar sujeto a visto bueno, autorización o control por parte de algún servicio fiscalizador, por lo que es necesario obtenerlo, en forma previa, ante el respectivo organismo.</span></li>
+		        		<li><i class="fa fa-check"></i> <strong>¿Cómo solicito la asesoría?</strong><br>
+		        		<strong class="naranja">R.</strong> Conocimiento de Embarque en original</strong>, que acredite el dominio de la mercancía por parte del consignatario.</li>
 
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué mercancías requieren visaciones, certificaciones o vistos buenos para su importación?</strong><br>
-		        		<span class="oculto">Todas aquellas mercancías que, de acuerdo a la legislación vigente, deban ser sometidas a control previo a su importación, por algún organismo del Estado (Servicio Agrícola y Ganadero / Seremi Salud, Etc)</span></li>
+		        		<li><i class="fa fa-check"></i> <strong>¿Qué requisitos debo cumplir para exportar a Chile?</strong><br>
+		        		<strong class="naranja">R.</strong> Conocimiento de Embarque en original</strong>, que acredite el dominio de la mercancía por parte del consignatario.</li>
 
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Cómo solicito la asesoría?</strong><br>
-		        		<span class="oculto">Simplemente debes ingresar a nuestro sitio web www.rdaelsauce.cl solicito asesoría y te contactará inmediatamente con el área comercial del Extraportuario, los cuales tomarán contacto con su persona a la brevedad posible.</span></li>
+		        		<li><i class="fa fa-check"></i> <strong>¿Qué permisos son necesarios para comercializar productos?</strong><br>
+		        		<strong class="naranja">R.</strong> Conocimiento de Embarque en original</strong>, que acredite el dominio de la mercancía por parte del consignatario.</li>
 		        	</ul>
 	<!--<div class="btnlanding"><div class="my-btn my-btn-primary ">
 		        									<div class="my-btn-bg-top"></div>
@@ -251,17 +268,17 @@ hasta grandes empresas </h3>
 
 		        									</div>
 		        								</div></div>-->
-		        	<ul class="sinmargen" >
+		        	<ul>
 		        		
 
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué beneficios obtengo de la asesoría comercial?</strong><br>
-		        		<span class="oculto">Ahorrar y principalmente, tener el control total de tu logística interna, permitiendo  el registro absoluto de tu carga.</span></li>
+		        		<li><i class="fa fa-check"></i> <strong>¿Qué tipos de cargas puedo mover?</strong><br>
+		        		<strong class="naranja">R.</strong> Conocimiento de Embarque en original</strong>, que acredite el dominio de la mercancía por parte del consignatario.</li>
 
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué se puede importar?</strong><br>
-		        		<span class="oculto">Todo aquel producto manufacturado o materia prima producido por una instalación o fábrica debidamente registrada y controlada por la institución o autoridad competente del país de origen.</span></li>
+		        		<li><i class="fa fa-check"></i> <strong>¿Qué beneficios obtengo de la asesoría comercial?</strong><br>
+		        		<strong class="naranja">R.</strong> Conocimiento de Embarque en original</strong>, que acredite el dominio de la mercancía por parte del consignatario.</li>
 
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong> ¿Qué debo hacer para importar una mercancía?</strong><br>
-		        		<span class="oculto">Si el valor de la mercancía supera los US$1.000 valor FOB: el importador debe contratar un  agente de aduanas. En el caso en que el desaduanamiento de las mercancías deba ser encomendado a este profesional, el importador deberá entregar a éste los documentos de base que se requieren para confeccionar la Declaración de Ingreso, la que podrá ser presentada al Servicio de Aduanas, vía internet.</span></li>
+		        		<li><i class="fa fa-check"></i> <strong> ¿Qué servicios puedo solicitar?</strong><br>
+		        		<strong class="naranja">R.</strong> Conocimiento de Embarque en original</strong>, que acredite el dominio de la mercancía por parte del consignatario.</li>
 
 		        		
 		        		
@@ -294,7 +311,7 @@ hasta grandes empresas </h3>
 	<!-- =========================
 		CONTACTS DETAILS
 	============================== -->
-    <div class="def-section contact-details landingcontacto">
+    <div class="def-section contact-details">
 		<div class="container">
 			<div class="row">
 				
@@ -310,7 +327,7 @@ hasta grandes empresas </h3>
 						<h3>TELÉFONO</h3>
 					</div>
 					<div class="contact-detail-text">
-						+56 9 5788 6514
+						+ 56 34 2373900
 					</div>
 				</div>
 				
@@ -330,70 +347,16 @@ hasta grandes empresas </h3>
 			</div>
 		</div>
 	</div>
-	<div id="respaldado" class="def-section fraselanding" >
-		
-					<p class="montserrat delgado">Servicio de Asesoría respaldado por <a href="http://rdaelsauce.cl"> <span class="inlineblock"><i class="fa fa-arrow-right"></i> EXTRAPORTUARIO EL SAUCE</span></a> </p>
-					
-				
-				
-		
-		
-	</div>
 	<!-- =========================
 		END CONTACTS DETAILS
 	============================== -->
 	
 <script type="text/javascript">
 	(function( $ ) {
-		$(document).ready(function(){
-			$(".btndocus").click(function() {
-				$( "#listadocus" ).slideDown('fast');
-$( "#profesionales" ).slideDown('fast');
-				event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $("#btndocuscontenedor").offset().top
-    }, 2000);
-});
-
-			$(".btnpreg").click(function() {
-				event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $("#pregfreq").offset().top
-    }, 2000);
-});
-
-$(".btncont").click(function() {
-	$( "#listadocus" ).show();
-$( "#profesionales" ).show();
-				event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $("#contactarse").offset().top
-    }, 2000);
-});
-
-$(".contactarse").click(function() {
-	$( "#listadocus" ).show();
-$( "#profesionales" ).show();
-				event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $("#contactarse").offset().top
-    }, 2000);
-});
-
-		
-
-		
-  //$( "i" ).insertBefore( $( ".wpcf7-list-item-label" ) );
-  $( ".pregunta" ).click(function() {
-$(this).find('span').slideToggle('fast');
-$(this).find('i.fa-caret-right').toggle();
-$(this).find('i.fa-caret-down').toggle();
-});
-})
 
   $( "#btndocuscontenedor" ).click(function() {
-$( "#listadocus" ).slideToggle('fast');
-$( "#profesionales" ).slideToggle('fast');
+$( "#listadocus" ).slideDown("fast");
+$( "#profesionales" ).slideDown("slow");
 });
 
   })( jQuery );

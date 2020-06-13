@@ -69,7 +69,7 @@
 						<p>Recinto de Depósito Aduanero con Servicios de Apoyo Logístico para mercancías de Importación, Exportación y Tránsito. </p>
 					</div>
 					<div class="footer-1-button">
-						<a href="nosotros.php"><div class="my-btn my-btn-primary">
+						<a href="nosotros"><div class="my-btn my-btn-primary">
 							<div class="my-btn-bg-top"></div>
 							<div class="my-btn-bg-bottom"></div>
 							<div class="my-btn-text">
@@ -85,17 +85,17 @@
 					<div class="footer-2-links">
 						<div class="footer-2-links-1">
 							<ul>
-								<li><a href="index.php">INICIO</a></li>
-								<li><a href="parqueo.php">SERVICIOS</a></li>
-								<li><a href="nosotros.php">NOSOTROS</a></li>
+								<li><a href="https://rdaelsauce.cl">INICIO</a></li>
+								<li><a href="parqueo">SERVICIOS</a></li>
+								<li><a href="nosotros">NOSOTROS</a></li>
 							
 							</ul>
 						</div>
 						<div class="footer-2-links-2">
 							<ul>
-								<li><a href="manuales.php">DOCUMENTOS</a></li>
-								<li><a href="noticias.php">NOTICIAS</a></li>
-								<li><a href="contacto.php">CONTACTO</a></li>
+								<li><a href="manuales">DOCUMENTOS</a></li>
+								<li><a href="noticias">NOTICIAS</a></li>
+								<li><a href="contacto">CONTACTO</a></li>
 							</ul>
 						</div>
 					</div>
@@ -105,7 +105,7 @@
 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer-3">
 					<h4 class="with-square with-border-bottom">CONTACTO</h4>
 					<div class="footer-3-phone footer-3-item">
-						<span class="footer-3-icon"><i class="fa fa-phone"></i></span>+56 34 237 3900
+						<span class="footer-3-icon"><i class="fa fa-phone"></i></span>+56 9 5788 6514
 					</div>
 			
 					<div class="footer-3-mail footer-3-item">
@@ -200,22 +200,22 @@
 			
 				<!-- === SLIDE MENU ITEM === -->	
 			<li> 
-				<a href="index.php">INICIO</a>
+				<a href="https://rdaelsauce.cl">INICIO</a>
 				
 			
 						<!-- === SLIDE MENU ITEM === -->	
 			<li> 
-				<a href="parqueo.php">SERVICIOS <i class="fa fa-plus arrow"></i></a>
+				<a href="parqueo">SERVICIOS <i class="fa fa-plus arrow"></i></a>
 				
 						<!-- === slide menu child === -->	
 				<ul class="slide-menu-child">
-					<li><a href="parqueo.php">PARQUEO SEGURO</a></li>
-					<li><a href="desrremonta.php">IZAJE DE CAMIONES</a></li>
-					<li><a href="almacenamiento.php">ALMACENAJE COMERCIAL</a></li>
-					<li><a href="cargatransito.php">CARGA EN TRÁNSITO</a></li>
-					<li><a href="procesosmenores.php">PROCESOS MENORES</a></li>
-					<li><a href="complementariosl.php">SERVICIOS COMPLEMENTARIOS</a></li>
-					<li><a href="tarifas.php">TARIFAS</a></li>
+					<li><a href="parqueo">PARQUEO SEGURO</a></li>
+					<li><a href="desrremonta">IZAJE DE CAMIONES</a></li>
+					<li><a href="almacenamiento">ALMACENAJE COMERCIAL</a></li>
+					<li><a href="cargatransito">CARGA EN TRÁNSITO</a></li>
+					<li><a href="procesosmenores">PROCESOS MENORES</a></li>
+					<li><a href="complementariosl">SERVICIOS COMPLEMENTARIOS</a></li>
+					<li><a href="tarifas">TARIFAS</a></li>
 				</ul>
 			</li>
 			
@@ -224,29 +224,29 @@
 			
 			<!-- === SLIDE MENU ITEM === -->	
 			<li> 
-				<a href="manuales.php">EMPRESA <i class="fa fa-plus arrow"></i></a>
+				<a href="manuales">EMPRESA <i class="fa fa-plus arrow"></i></a>
 				
 				<!-- === slide menu child === -->	
 				<ul class="slide-menu-child">
-					<li><a href="nosotros.php">NOSOTROS</a></li>
-					<li><a href="manuales.php">MANUALES</a></li>
-					<li><a href="certificaciones.php">CERTIFICACIONES</a></li>
-					<li><a href="glosario.php">GLOSARIO</a></li>
+					<li><a href="nosotros">NOSOTROS</a></li>
+					<li><a href="manuales">MANUALES</a></li>
+					<li><a href="certificaciones">CERTIFICACIONES</a></li>
+					<li><a href="glosario">GLOSARIO</a></li>
 				</ul>
 			</li>
 			
 			<!-- === SLIDE MENU ITEM === -->	
 			<li>
-				<a href="noticias.php">NOTICIAS</a>
+				<a href="noticias">NOTICIAS</a>
 				
 			
 			
 			<!-- === SLIDE MENU ITEM === -->	
 			<li>
-				<a href="contacto.php">CONTACTO</a>
+				<a href="contacto">CONTACTO</a>
 			</li>
 			<li>
-				<a href="contacto.php" class="asesoriabtn">SOLICITAR ASESORIA</a>
+				<a href="contacto" class="asesoriabtn">SOLICITAR ASESORIA</a>
 			</li>
 			
 		</ul>

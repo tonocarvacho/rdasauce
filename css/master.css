@@ -53,7 +53,15 @@ Designed By: Vadzim Liashkevich
     padding: 10px;
     margin-top: 7px;
     margin-left: 15px;
-    background-color: #ff8840 !important
+    background-color: transparent;
+    color: white;
+    border: 1px solid white !important;
+}
+
+.main-menu .navbar-nav>li>a.asesoria:hover {
+    color: #ff8840;
+    border: 1px solid #ff8840;
+    background-color: white;
 }
 
 .main-navbar-1 {
@@ -70,7 +78,11 @@ Designed By: Vadzim Liashkevich
 }
 
 .barrablanca span{
-	color: black !important
+	color: #3e4f59 !important
+}
+
+.barrablanca h6{
+    font-family: Lato,sans-serif;
 }
 
 .barrablanca a:visited {
@@ -79,8 +91,8 @@ Designed By: Vadzim Liashkevich
 .barrablanca strong {
 	display: inline-block;
 }
-.mgr {
-	margin-right: 10px 
+.colornegro {
+    color: #3e4f59;
 }
 
 
@@ -160,17 +172,12 @@ background-repeat: repeat;
 
 }
 
-.video-section {
-    position: relative;
-    height: 500px;
-    overflow: hidden;
-    background: black;
-}
+
 
 .video-section video {
 margin: 0px; 
 width: 1420px; 
-height: 500px;
+height: 550px;
     opacity: 0.3;
 }
 
@@ -179,10 +186,7 @@ font-weight: normal;
 font-size: 34px
 }
 
-.video-section h3 {
-font-weight: 400;
-font-size: 30px;
-}
+
 
 #home-stats h2 {
 font-weight: normal;
@@ -334,7 +338,7 @@ font-size: 16px }
 .fraselanding {
     background-color: #1f2a31;
     background-image: none;
-    padding: 20px 0;
+    padding: 20px 15px;
 
 }
 .fraselanding h3 {
@@ -360,7 +364,7 @@ font-size: 16px }
 }
 
 .liuno li{
-    font-size: 23px;
+    font-size: 20px;
     margin-bottom: 15px
 }
 
@@ -373,7 +377,7 @@ font-size: 16px }
     font-size: 28px;
     text-align: center;
     font-weight: 700;
-    margin: 25px 0;
+    margin: 65px 0 45px 0;
 }
 
 .documentosseccion li {
@@ -396,7 +400,95 @@ font-size: 16px }
     font-weight: normal;
 }
 
+
 .landcont {
+    max-width: 1100px;
+    width: 85%;
+    text-align: center;
+    margin: 0px auto 0px auto;
+    position: absolute;
+    top: 60px;
+    left: 0;
+right: 0;
+color: white !important;
+}
+.fondoform {
+        margin: 25px auto 0 auto;
+    }
+    .video-section {
+    position: relative;
+    height: 680px;
+    overflow: hidden;
+    background: black;
+    display: flex;
+justify-content: center;
+}
+.video-section h3 {
+font-weight: 400;
+font-size: 26px;
+min-width: 300px;
+}
+.contenedor.sololanding  {
+        max-width: 1100px;
+width: 85%;
+display: block;
+margin: 0px auto 0px auto;
+text-align: center;
+    }
+     .fraselanding  h3{
+        max-width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #pregfreq.fraselanding h3 {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+@media screen and (min-width: 630px) {
+    .liuno li {
+    font-size: 23px;
+}
+}
+@media screen and (min-width: 740px) {
+  
+    .fondoform {
+         margin: 25px 0 0 auto;
+    }
+    .solodesktop{
+        display: block;
+    }
+    .solomovil{
+        display: none;
+    }
+    .contenedor.sololanding  {
+        max-width: 1100px;
+width: 85%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 0px auto 0px auto;
+text-align: center;
+
+    }
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .video-section h3 {
+    font-weight: 400;
+    font-size: 30px;
+}
+    .video-section {
+    
+    height: 550px;
+    
+}
+    .fondoform {
+        margin-top: 0px;
+    }
+   .landcont {
     max-width: 1100px;
     width: 85%;
     display: flex;
@@ -404,21 +496,92 @@ font-size: 16px }
     justify-content: space-between;
     margin: 0px auto 0px auto;
     position: absolute;
-    top: 50px;
+    top: 100px;
     left: 0;
 right: 0;
 color: white !important;
+text-align: left;
+} 
 }
 
-.fondoform {
+@media screen and (max-width: 740px) {
+
+    .solodesktop{
+        display: none;
+    }
+    .solomovil{
+        display: block;
+        margin-top: 25px;
+    }
+    .mitad.loop {
+        max-width: 500px;
+width: 100%;
+    }
+    #pregfreq .iconpreg {
+    font-size: 40px;
+    margin: 20px 15px 0 15px;
+    color: white;
+}
+
+#pregfreq.fraselanding h3 {
+    font-size: 24px;
+    color: white;
+}
+   
+    .logo-text {
+    padding: 5px;
+    font-size: 13px;
+}
+
+.logo-image img{
+    width: 45px;
+}
+}
+
+@media screen and (max-width: 530px) {
+   
+    .video-section {
     
+    height: 750px;
+    
+}
+}
+
+@media screen and (max-width: 410px) {
+    #pregfreq.fraselanding .title-group {
+        display: block;
+    }
+    #pregfreq.fraselanding .title-group h3{
+        margin-top: 0
+    }
+    #pregfreq .iconpreg {
+    margin: 0px 15px 0 15px;
+}
+   
+
+}
+
+@media screen and (max-width: 369px) {
+  
+   
+    .video-section {
+    
+    height: 810px;
+    
+}
+}
+.fondoform {
+    min-width: 300px;
+    max-width: 450px;
     color: #fff;
     font-size: 18px;
     text-align: left;
     background-color: rgba(255, 255, 255, 0.80);
     border: 0px solid #000000;
-    padding: 25px;
+    padding: 25px 25px 10px 25px;
+   
 }
+
 
 .fondoform h3 {
 margin: 0 0 15px 0;
@@ -429,6 +592,10 @@ text-align: center;
 }
 
 .fondoform p {
+    margin: 0
+}
+
+.fondoform p.subtform {
 font-size: 22px;
 color: #3e4f59;
 text-align: center;
@@ -436,7 +603,8 @@ font-weight: 500;
 margin-bottom: 15px
 }
 
-.fondoform input {
+
+.fondoform input, .fondoform textarea  {
     border: 1px solid #d5dadf;   
     background: #fff;
     padding: 10px;
@@ -444,6 +612,30 @@ margin-bottom: 15px
     color: #3e4f59;
     width: 100%;
     margin-bottom: 15px;
+}
+
+.fondoform textarea  {
+    max-height: 150px;
+}
+
+
+.fondoform input.my-btn-primary {
+        font-weight: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    color: white;
+    border: 1px solid #ff8840;
+    background-color: #ff8840;
+    margin-bottom: 0;
+}
+
+.fondoform input.my-btn-primary:hover {
+        font-weight: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #ff8840;
+    border: 1px solid #ff8840;
+    background-color: white;
 }
 
 .fondoform .my-btn {
@@ -470,8 +662,7 @@ margin-bottom: 15px
 
 .barrablanca.landinghead {
     padding: 7px 0;
-text-align: center;
-justify-content: center;
+    justify-content: center;
 }
 
 .barrablanca.landinghead a{
@@ -494,9 +685,11 @@ margin: 0 10px;
 }
 
 .video-section img.fondo {
-margin: 0px; 
-width: 100%; 
-    opacity: 0.3;
+margin: 0px auto;
+height: 100%;
+opacity: 0.3;
+width: auto;
+min-width: 1100px;
 }
 
 .claro {
@@ -504,14 +697,13 @@ width: 100%;
 }
 
 .claro span {
-    text-decoration: underline;
     font-size: 18px
 }
 
 .icondocu {
-    width: 55px;
+    width: 50px;
     margin-right: 15px;
-    min-width: 55px;
+    min-width: 50px;
 }
 
 .icondocu img{
@@ -521,7 +713,7 @@ width: 100%;
 .listadocus li {
     display: flex;
 align-items: center;
-margin-bottom: 30px;
+margin-bottom: 40px;
 }
 
 .fraselanding .claro:hover {
@@ -537,3 +729,228 @@ margin-bottom: 30px;
     margin: 0;
 
 }
+
+.pregunta strong:hover {
+    cursor: pointer;
+}
+
+i.fa-caret-right {
+    margin-right: 5px;
+}
+
+.main-navbar-1.landingbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.documentosseccion li.pregunta span {
+    color: grey;
+    font-size: 20px;
+    margin: 5px 0 0 25px;
+}
+
+.documentosseccion li.pregunta strong { 
+    font-size: 24px;
+}
+
+.iconpreg {
+    font-size: 50px;
+margin: 15px 25px 0 0;
+    color: white;
+}
+
+#pregfreq .title-group{
+    display: flex;
+justify-content: center;
+max-width: 1100px;
+margin: 0 auto;
+}
+
+div.wpcf7-response-output {
+        margin: -20px 0 0 0;
+    padding: 0;
+    color: #3e4f59;
+    font-size: 16px;
+}
+
+
+span.wpcf7-not-valid-tip {
+    margin-top: -15px;
+    font-size: 14px;
+    height: 5px;
+}
+
+.marginauto {
+    margin: 0 auto;
+}
+
+#respaldado {
+   padding: 18px 0 10px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+text-align: center;
+}
+
+#respaldado a:visited {
+  color: #ff8840;
+}
+
+.contactarse:hover {
+    cursor: pointer;
+}
+
+.sinmargen {
+    margin: 0; 
+}
+
+img.mitad {
+    margin-bottom: 15px
+}
+
+.inlineblock {
+    display: inline-block;
+}
+
+.landingcontacto .contact-detail-text {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.listaticket li {
+    display: flex;
+align-items: center;
+}
+.listaticket li i{
+    margin-right: 8px
+}
+
+.formuhome form p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formuhome i {
+    font-size: 38px;
+    margin: 0;
+}
+
+.formuhome .iconpreg {
+    margin: -20px 15px 0 0  ;
+}
+
+#pregfreq.formuhome{
+    padding: 20px 35px 10px 35px;
+
+}
+
+#pregfreq.formuhome .title-group{
+    align-items: center;
+
+}
+
+#pregfreq.formuhome div.wpcf7{
+   display: flex;
+align-items: center;
+
+}
+
+.formuhome h3 {
+    font-size: 20px;
+    text-align: left;
+    min-width: 440px;
+    margin-top: 0;
+
+}
+
+.formuhome form p span {
+    width: 38%;
+    margin-left: 15px;
+}
+
+.formuhome form p span.ajax-loader {
+    width: 0%;
+}
+
+
+.formuhome form p span input{
+    width: 100%;
+    border: 1px solid #d5dadf;
+background: #fff;
+padding: 10px;
+font-size: 14px;
+color: #3e4f59;
+width: 100%;
+}
+
+.formuhome form p input.my-btn-primary{
+    width: 20%;
+    margin-left: 15px;
+    font-weight: normal;
+font-size: 16px;
+line-height: 1.2;
+color: white;
+border: 1px solid #ff8840;
+background-color: #ff8840;
+padding: 11px;
+}
+
+.formuhome form p input.my-btn-primary:hover{
+    font-weight: normal;
+font-size: 16px;
+line-height: 1.2;
+color: #ff8840;
+border: 1px solid #ff8840;
+background-color: white;
+}
+
+.headset {
+    width: 50px
+}
+
+.img-icon.ctc-analytics {
+    height: 60px
+}
+
+.my-btn.my-btn-primary {
+    text-align: center;
+}
+
+.margintop{
+    padding-top: 40px;
+}
+
+.sfsi_widget.sfsi_shortcode_container {
+    margin-top: -15px
+}
+
+.landingcontacto .container {
+    width: 100%;
+}  
+
+@media (min-width: 1200px) {
+.landingcontacto .container {
+    width: 100%;
+}
+
+}
+
+a.parqueo:visited {
+    color: #ff8840;
+}
+
+input[type="email"], input[type="tel"] {
+    font-family: Montserrat;
+}
+
+.fondoform.marginauto.formmensaje {
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+.mgr {
+    margin: 0 5px 0 0;
+}
+

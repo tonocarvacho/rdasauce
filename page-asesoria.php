@@ -1,13 +1,13 @@
 <?php
 /**
- *Template Name: landing-page
+ *Template Name: asesoria
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package RDASauce
  */
 
-get_header('landing');
+get_header();
 ?>
 	
 			
@@ -26,7 +26,7 @@ get_header('landing');
 					<div class="fondoform ">
                           <h3 class="titform"><i class="fa fa-check naranja"></i> Obtén Asesoría Profesional</h3>
                           <p class="subtform">Envíanos tus datos<br>y te contactaremos sin costo</p>
-                          <?php echo do_shortcode( '[contact-form-7 id="164" title="Formulario de contacto 1"]' ); ?>
+                          <?php echo do_shortcode( '[contact-form-7 id="62" title="Formulario de contacto 1"]' ); ?>
             <!--  <form>
                 
                   
@@ -201,7 +201,7 @@ hasta grandes empresas </h3>
 					<div class="fondoform marginauto">
                           <h3 class="titform"><i class="fa fa-check naranja"></i> Obtén Asesoría Profesional</h3>
                           <p class="subtform">Envíanos tus datos<br>y te contactaremos sin costo</p>
-                          <?php echo do_shortcode( '[contact-form-7 id="164" title="Formulario de contacto 1"]' ); ?>
+                          <?php echo do_shortcode( '[contact-form-7 id="62" title="Formulario de contacto 1"]' ); ?>
                   
             </div>
 				</div>
@@ -310,7 +310,7 @@ hasta grandes empresas </h3>
 						<h3>TELÉFONO</h3>
 					</div>
 					<div class="contact-detail-text">
-						+56 9 5788 6514
+						+ 56 34 2373900
 					</div>
 				</div>
 				

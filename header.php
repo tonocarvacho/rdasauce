@@ -29,15 +29,17 @@
 
 
 <div class="title-group barrablanca">
-	<?php $value = get_field( "jefe_de_turno", 43 );
+
+	<?php $value = get_field( "jefe_de_turno", 26 );
 	$jefe_nombre = $value->post_title;
 	$jefe_telefono = get_field( "telefono", $value->ID );
 	$jefe_email = get_field( "email", $value->ID );
 	?>
-					<h6 class="montserrat"><strong class="mgr">Jefe de turno: </strong><strong><a href="Tel:+<?php echo $jefe_telefono; ?>"> ✆ </a> <a href="mailto:<?php echo $jefe_email; ?>"> <?php echo $jefe_nombre; ?> </a></strong></h6>
+	
+					<h6 class=""><strong class="naranja">Jefe de turno: </strong><a class="colornegro mgr" href="mailto:<?php echo $jefe_email; ?>"> <?php echo $jefe_nombre; ?> </a> <a href="Tel:+<?php echo $jefe_telefono; ?>"> <i class="fa fa-phone naranja"></i> <span class="colornegro">+<?php echo $jefe_telefono; ?></span></a></h6>
 					<div>
-						<strong><a href="" class="mgr"><i class="fa fa-phone"></i> <span>+56 34 237 3900</span></a></strong>
-						 <strong><a href=""><i class="fa fa-envelope"></i> <span>informaciones@rdaelsauce.cl</span></a></strong>
+						<strong><a href="Tel:+56957886514" class="mgr"><i class="fa fa-phone"></i> <span>+56 9 5788 6514</span> </a> </strong>
+						 <strong> <a href=""> <i class="fa fa-envelope"></i> <span>informaciones@rdaelsauce.cl</span></a></strong>
 						</div>
 				</div>
 
@@ -73,7 +75,7 @@
 				<!-- === TOP LOGO === -->
 				 
 				<div class="logo" id="main-logo">
-					<div class="logo-image"><a href="index.php">
+					<div class="logo-image"><a href="https://rdaelsauce.cl/">
 						<img src="<?php echo bloginfo('template_url');?>/img/logo.png" alt="" /></a>
 					</div>
 					<div class="logo-text">
@@ -230,7 +232,7 @@
 
 						<!-- === top menu item === -->
 						<li >
-							<a class="latest asesoria" href="<?php echo home_url(); ?>/contacto">Solicitar Asesoria</a>
+							<a class="latest asesoria" href="<?php echo home_url(); ?>/asesoria">Solicitar Asesoría</a>
 						</li>
 					</ul>
 				</div>
