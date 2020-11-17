@@ -326,7 +326,7 @@ function custom_post_type() {
         'description'         => __( 'Listado jefes con datos', 'rdasauce' ),
         'labels'              => $labels,
         'show_in_rest'        => true,
-        'supports'            => array( 'title', 'thumbnail', 'custom-fields'),
+        'supports'            => array( 'title', 'thumbnail', 'custom-fields', 'editor', 'comments'),
         'hierarchical'        => false,
         'public'              => true,
         'show_ui'             => true,
@@ -366,7 +366,7 @@ add_action( 'init', 'custom_post_type', 0 );
 ***************************/
 
 
-
+/*
 add_filter('use_block_editor_for_post_type', 'prefix_disable_gutenberg', 10, 2);
 function prefix_disable_gutenberg($current_status, $post_type)
 {
@@ -376,3 +376,4 @@ function prefix_disable_gutenberg($current_status, $post_type)
     return $current_status;
 }
 
+*/

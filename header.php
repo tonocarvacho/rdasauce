@@ -13,6 +13,13 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K23P8S6');</script>
+<!-- End Google Tag Manager -->
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
@@ -25,6 +32,10 @@
 </head>
 
 <body <?php //body_class(); ?>>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K23P8S6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <?php wp_body_open(); ?>
 
 
@@ -36,7 +47,7 @@
 	$jefe_email = get_field( "email", $value->ID );
 	?>
 	
-					<h6 class=""><strong class="naranja">Jefe de turno: </strong><a class="colornegro mgr" href="mailto:<?php echo $jefe_email; ?>"> <?php echo $jefe_nombre; ?> </a> <a href="Tel:+<?php echo $jefe_telefono; ?>"> <i class="fa fa-phone naranja"></i> <span class="colornegro">+<?php echo $jefe_telefono; ?></span></a></h6>
+					<h6 class=""><strong class="naranja">Jefe turno: </strong><a class="colornegro mgr" href="mailto:<?php echo $jefe_email; ?>"> <?php echo $jefe_nombre; ?> </a> <a class="tel-jefeturno" href="Tel:+<?php echo $jefe_telefono; ?>"> <i class="fa fa-phone naranja"></i> <span class="colornegro">+<?php echo $jefe_telefono; ?></span></a></h6>
 					<div>
 						<strong><a href="Tel:+56957886514" class="mgr"><i class="fa fa-phone"></i> <span>+56 9 5788 6514</span> </a> </strong>
 						 <strong> <a href=""> <i class="fa fa-envelope"></i> <span>informaciones@rdaelsauce.cl</span></a></strong>
@@ -154,24 +165,30 @@
 						
 							<ul class="dropdown-menu" role="menu">
 								<li>
-									<a href="<?php echo home_url(); ?>/parqueo">PARQUEO SEGURO</a>
+									<a href="<?php echo home_url(); ?>/almacenaje">ALMACENAJE</a>
 								</li>
 								<li>
-									<a href="<?php echo home_url(); ?>/almacenamiento">ALMACENAJE COMERCIAL</a>
+									<a href="<?php echo home_url(); ?>/almacenaje-comercial">ALMACENAJE COMERCIAL</a>
 								</li>
 								<li>
-									<a href="<?php echo home_url(); ?>/desrremonta">IZAJE DE CAMIONES</a>
-								</li>
-								
-									<li>
-									<a href="<?php echo home_url(); ?>/cargatransito">CARGA EN TRÁNSITO</a>
+									<a href="<?php echo home_url(); ?>/parqueo">PARQUEO</a>
 								</li>
 								<li>
-									<a href="<?php echo home_url(); ?>/procesosmenores">PROCESOS MENORES</a>
+									<a href="<?php echo home_url(); ?>/parqueo-comercial">PARQUEO COMERCIAL</a>
 								</li>
 								<li>
 									<a href="<?php echo home_url(); ?>/complementarios">SERVICIOS COMPLEMENTARIOS</a>
 								</li>
+								<li>
+									<a href="<?php echo home_url(); ?>/cargatransito">CARGA EN TR&#193;NSITO</a>
+								</li>
+								<li>
+									<a href="<?php echo home_url(); ?>/desrremonta">IZAJE PSM</a>
+								</li>
+								<li>
+									<a href="<?php echo home_url(); ?>/procesosmenores">PROCESOS MENORES</a>
+								</li>
+								
 								<li>
 									<a href="<?php echo home_url(); ?>/tarifas">TARIFAS</a>
 								</li>
@@ -209,7 +226,7 @@
 						<li class="main-menu-separator"></li>
 						<!-- === top menu item === -->
 						<li class="dropdown">
-							<a class="latest" href="<?php echo home_url(); ?>/category/noticias">NOTICIAS</a>
+							<a class="latest" href="<?php echo home_url(); ?>/tarifas">TARIFAS</a>
 							
 							<!--
 							

@@ -21,25 +21,12 @@
 				<!-- === SUBSCRIBE TEXT === -->
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home-subscribe-text animated wow fadeInUp" data-wow-duration=".5s" data-wow-offset="100">
 					<span class="home-subscribe-icon"><i class="flaticon-email114"></i></span>
-					SUSCRÍBETE PARA OBTENER NOTICIAS Y ACTUALIZACIONES
+					ENVÍANOS TU CORREO PARA SOLICITAR INFORMACIÓN
 				</div>
 				
 				<!-- === SUBSCRIBE FORM === -->
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home-subscribe-form animated wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s" data-wow-offset="100">
-					<form>
-						<div class="home-subscribe-form-input">
-							<input type="text" name="subscribe" placeholder="TU E-MAIL" />
-						</div>
-						<div class="home-subscribe-form-button">
-							<button><span class="my-btn my-btn-primary">
-								<span class="my-btn-bg-top"></span>
-								<span class="my-btn-bg-bottom"></span>
-								<span class="my-btn-text">
-									SUSCRIPCIÓN
-								</span>
-							</span></button>
-						</div>
-					</form>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 home-subscribe-form animated wow fadeInUp formuhome subscri" data-wow-duration=".5s" data-wow-delay=".3s" data-wow-offset="100">
+					<?php echo do_shortcode( '[contact-form-7 id="206" title="subscribete"]' ); ?>
 				</div>
 				
 			</div>
@@ -86,6 +73,8 @@
 						<div class="footer-2-links-1">
 							<ul>
 								<li><a href="https://rdaelsauce.cl">INICIO</a></li>
+							<li><a href="https://www.rdaelsauce.cl/tourvirtual">TOUR 360°</a></li>
+
 								<li><a href="parqueo">SERVICIOS</a></li>
 								<li><a href="nosotros">NOSOTROS</a></li>
 							
@@ -174,7 +163,7 @@
 				<!-- === BOTTOM RIGHT === -->
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 bottom-3">
 					<a href="#">Desarrollo</a> | 
-				    Diseño <a href="#">por <span class="color-primary">MiCentro</span></a>
+				    Diseño <a href="http://micentro.cl">por <span class="color-primary">MiCentro</span></a>
 				</div>
 				
 			</div>
@@ -199,22 +188,25 @@
 		<ul id="left-menu" class="left-menu">
 			
 				<!-- === SLIDE MENU ITEM === -->	
-			<li> 
-				<a href="https://rdaelsauce.cl">INICIO</a>
+			<li> <a href="https://rdaelsauce.cl">INICIO</a></li>
 				
-			
+			<li><a href="https://www.rdaelsauce.cl/tourvirtual">TOUR 360°</a></li>
 						<!-- === SLIDE MENU ITEM === -->	
 			<li> 
 				<a href="parqueo">SERVICIOS <i class="fa fa-plus arrow"></i></a>
 				
 						<!-- === slide menu child === -->	
 				<ul class="slide-menu-child">
-					<li><a href="parqueo">PARQUEO SEGURO</a></li>
-					<li><a href="desrremonta">IZAJE DE CAMIONES</a></li>
-					<li><a href="almacenamiento">ALMACENAJE COMERCIAL</a></li>
-					<li><a href="cargatransito">CARGA EN TRÁNSITO</a></li>
-					<li><a href="procesosmenores">PROCESOS MENORES</a></li>
+					<li><a href="almacenaje">ALMACENAJE</a></li>
+					<li><a href="almacenaje-comercial">ALMACENAJE COMERCIAL</a></li>
+					<li><a href="parqueo">PARQUEO</a></li>
+					<li><a href="parqueo-comercial">PARQUEO COMERCIAL</a></li>
 					<li><a href="complementariosl">SERVICIOS COMPLEMENTARIOS</a></li>
+					<li><a href="cargatransito">CARGA EN TRÁNSITO</a></li>
+					<li><a href="desrremonta">IZAJE PSM</a></li>
+					
+					<li><a href="procesosmenores">PROCESOS MENORES</a></li>
+					
 					<li><a href="tarifas">TARIFAS</a></li>
 				</ul>
 			</li>
@@ -245,8 +237,9 @@
 			<li>
 				<a href="contacto">CONTACTO</a>
 			</li>
+					<li><a href="tarifas">TARIFAS</a></li>
 			<li>
-				<a href="contacto" class="asesoriabtn">SOLICITAR ASESORIA</a>
+				<a href="asesoria" class="asesoriabtn">SOLICITAR ASESORIA</a>
 			</li>
 			
 		</ul>

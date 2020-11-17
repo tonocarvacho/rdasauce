@@ -16,6 +16,77 @@ get_header();
 	<div id="main-slider-1" class="main-slider main-slider-1">
 		<div class="sp-slides">
 			
+
+			<!-- === SLIDER ITEM === -->	
+			
+			<div class="sp-slide"> 
+				
+				<!-- === slide overlay === -->	
+				<div class="main-slider-overlay"></div>
+				
+				<!-- === slide image === -->	
+                <img class="sp-image" src="assets/slider-pro/css/images/blank.gif"
+				data-src="<?php echo bloginfo('template_url');?>/media/main-slider/1b.jpg"
+				data-retina="<?php echo bloginfo('template_url');?>/media/main-slider/1b.jpg" alt="" />
+				
+				<!-- === slide container === -->	
+				<div class="container">
+                    <div class="main-slider-content">
+        				<h2 class="sp-layer"
+                            data-position="rightCenter" data-horizontal="15" data-vertical="-155"
+        					data-show-transition="left" data-hide-transition="left" data-show-delay="200" data-hide-delay="200">
+        					APOYO LOGÍSTICO PARA MERCANCÍAS
+        				</h2>
+        
+        				<h2 class="sp-layer color-primary" style="text-align:right"
+                            data-position="rightCenter" data-horizontal="15" data-vertical="-80"
+        					data-show-transition="left" data-hide-transition="left" data-show-delay="400" data-hide-delay="400">
+        					   PROVENIENTES DE PAÍSES DEL CONO SUR <br />
+							<img style="width: 200px" 
+							 src="<?php echo bloginfo('template_url');?>/img/landing/banderas.png" alt="" />
+        				</h2>
+						
+            
+                        <a class="sp-layer main-button" href="tarifas"
+                            data-position="rightCenter" data-horizontal="15" data-vertical="60"
+            				data-show-transition="left" data-hide-transition="left" data-show-delay="600" data-hide-delay="600">
+							<div class="my-btn my-btn-primary">
+								<div class="my-btn-bg-top"></div>
+								<div class="my-btn-bg-bottom"></div>
+								<div class="my-btn-text">
+									&ensp;&emsp;VER  TARIFAS
+								</div>
+							</div>
+						</a>
+                        
+						<!-- === slide buttons === -->	
+                        <div class="sp-layer main-slider-buttons" 
+							data-position="rightCenter" data-horizontal="15" data-vertical="165" data-hide-delay="600">
+							<a class="main-slider-button-prev" href="#">
+								<div class="my-btn my-btn-default">
+									<div class="my-btn-bg-top"></div>
+									<div class="my-btn-bg-bottom"></div>
+									<div class="my-btn-text">
+										<i class="fa fa-angle-left"></i>
+									</div>
+								</div>
+							</a>
+							<a class="main-slider-button-next" href="#">
+								<div class="my-btn my-btn-default">
+									<div class="my-btn-bg-top"></div>
+									<div class="my-btn-bg-bottom"></div>
+									<div class="my-btn-text">
+										<i class="fa fa-angle-right"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+                         
+                    </div>
+                </div>
+			</div>
+
+				
 			<!-- === SLIDER ITEM === -->	
 			
 			<div class="sp-slide">
@@ -34,16 +105,16 @@ get_header();
         				<h2 class="sp-layer"
                             data-position="rightCenter" data-horizontal="15" data-vertical="-92"
         					data-show-transition="left" data-hide-transition="left" data-show-delay="200" data-hide-delay="200">
-        					Ayudamos A Nacionalizar Su Mercancia
+        					PARQUEO Y ALMACENAJE COMERCIAL 24/7
         				</h2>
         
         				<h2 class="sp-layer color-primary"
                             data-position="rightCenter" data-horizontal="15" data-vertical="-40"
         					data-show-transition="left" data-hide-transition="left" data-show-delay="400" data-hide-delay="400">
-        					Almacenaje, Bodegaje & Asesoria.
+        					RECINTO DE DEPÓSITO ADUANERO
         				</h2>
             
-                        <a class="sp-layer main-button" href="tarifas"
+                        <a class="sp-layer main-button btncontactarse" href="#"
                             data-position="rightCenter" data-horizontal="15" data-vertical="55"
             				data-show-transition="left" data-hide-transition="left" data-show-delay="600" data-hide-delay="600">
 							<div class="my-btn my-btn-primary">
@@ -80,6 +151,8 @@ get_header();
                 </div>
 			</div>
 
+
+			
             <!-- === SLIDER ITEM === -->	
 			
 			<div class="sp-slide">
@@ -338,7 +411,7 @@ get_header();
 						</div>
 						<h3>parqueo<br>seguro</h3>
 						<div class="service-text">
-							<p>Aparcamiento de aquellos vehículos de transporte que precisen permanecer en el recinto de depósito aduanero, opción de pago en efectivo, vigilacia las 24hrs del día.</p>
+							<p>Aparcamiento de aquellos vehículos de transporte que precisen permanecer en el recinto de depósito aduanero, opción de pago en efectivo, vigilancia las 24 hrs. del día.</p>
 						</div>
 						<div class="service-button">
 							<a href="parqueo">
@@ -365,14 +438,14 @@ get_header();
 					<div class="service-mark-border-left"></div>
 					<div class="service">
 						<div class="service-icon">
-							<img src="<?php echo bloginfo('template_url');?>/img/des.png" alt="" />
+							<img src="<?php echo bloginfo('template_url');?>/img/alm2.png" alt="" />
 						</div>
-						<h3>izaje de<br>camiones</h3>
+						<h3>almacenaje<br>comercial</h3>
 						<div class="service-text">
-							<p>Manipulación de camiones<br>que son transportados en condición de "remonta", que son separados para su posterior retiro de forma individual.</p>
+							<p>Custodia que se brinda a la carga de importación u otra destinación aduanera, hasta su entrega a los consignatarios o a quienes representen sus derechos.</p>
 						</div>
 						<div class="service-button">
-							<a href="desrremonta">
+							<a href="almacenaje">
 								<div class="my-btn my-btn-default">
 									<div class="my-btn-bg-top"></div>
 									<div class="my-btn-bg-bottom"></div>
@@ -386,35 +459,9 @@ get_header();
 					
 				</div>
                 
-				<!-- === SERVICE ITEM === -->
-				
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-				
-					<div class="service">
-						<div class="service-icon">
-							<img src="<?php echo bloginfo('template_url');?>/img/alm.png" alt="" />
-						</div>
-						<h3>almacenaje<br>comercial</h3>
-						<div class="service-text">
-							<p>Custodia que se brinda a la carga de importación u otra destinación aduanera, hasta su entrega a los consignatarios o a quienes representen sus derechos.</p>
-						</div>
-                        <div class="service-button">
-							<a href="almacenamiento">
-								<div class="my-btn my-btn-default">
-									<div class="my-btn-bg-top"></div>
-									<div class="my-btn-bg-bottom"></div>
-									<div class="my-btn-text">
-										MÁS INFORMACIÓN
-									</div>
-								</div>
-							</a>
-						</div>
-                     </div>
-					 
-                 </div>
-                
-				<!-- === SERVICE ITEM === -->
-				
+			
+
+							
 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 				
 					<div class="service">
@@ -439,6 +486,35 @@ get_header();
                      </div>
 					 
                  </div>
+
+					<!-- === SERVICE ITEM === -->
+				
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+				
+					<div class="service">
+						<div class="service-icon">
+							<img src="<?php echo bloginfo('template_url');?>/img/des2.png" alt="" />
+						</div>
+						<h3>izaje de<br>camiones</h3>
+						<div class="service-text">
+							<p>Manipulación de camiones<br>que son transportados en condición de "remonta", que son separados para su posterior retiro de forma individual.</p>
+						</div>
+                        <div class="service-button">
+							<a href="desrremonta">
+								<div class="my-btn my-btn-default">
+									<div class="my-btn-bg-top"></div>
+									<div class="my-btn-bg-bottom"></div>
+									<div class="my-btn-text">
+										MÁS INFORMACIÓN
+									</div>
+								</div>
+							</a>
+						</div>
+                     </div>
+					 
+                 </div>
+                
+				<!-- === SERVICE ITEM === -->
 				 
              </div>
          </div>
@@ -607,7 +683,7 @@ $category_block_query = new WP_Query( $args );
 				
 				<!-- === BLOG READ MORE BUTTON === -->
 				<div class="row home-blog-more">
-					<a href="noticias"><div class="my-btn my-btn-primary">
+					<a href="<?php echo home_url(); ?>/category/noticias"><div class="my-btn my-btn-primary">
 						<div class="my-btn-bg-top"></div>
 						<div class="my-btn-bg-bottom"></div>
 						<div class="my-btn-text">
@@ -623,38 +699,17 @@ $category_block_query = new WP_Query( $args );
 		END BLOG SECTION
 	======================================== -->
      
-     
-     
-     
-     
-     
-     	<!-- ===================================
-		SECTION STATS
-	======================================== -->
-	<div class="page-rda" data-stellar-background-ratio="0.4">
-		<div class="stats-overlay"></div>
-		<div class="container">
-			<div class="row">
-				<!-- === TITLE GROUP === -->
-				<div align="center"><img src="<?php echo bloginfo('template_url');?>/img/contacto.png"></div>
+     <section class="video-section">
+	 	<video class="video-home" loop="loop" autoplay="" playsinline="" muted="" preload="none" src="<?php echo bloginfo('template_url');?>/img/video/frioloop.mp4" >
+				<source type='video/mp4;' src="<?php echo bloginfo('template_url');?>/img/video/frioloop.mp4">
+				
+			</video>
+			<div class="texto-video">
+				<h2 class="montserrat"><strong>PRÓXIMAMENTE</strong> | <span class="naranja">ANDÉN FRIGORÍFICO</span></h2>
+			<h3 class="montserrat delgado">Extraportuario El Sauce</strong></h3>
 			
-				</div>	
-			</div>
 		</div>
-
-	
-	
-	
-	<!-- ===================================
-		END SECTION STATS
-	======================================== -->
-    
-     
-     
-     
-     
-
-	
+	 </section>
 		<!-- =========================
 		CONTACTS
 	============================== -->
@@ -770,6 +825,23 @@ $category_block_query = new WP_Query( $args );
 	<!-- =========================
 		END CONTACTS MAP
 	============================== -->
+	<script type="text/javascript">
+	(function( $ ) {
+		$(document).ready(function(){
+			$(".btncontactarse").click(function() {
+				event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $("#contactarse").offset().top
+    }, 2000);
+});
+
+
+})
+
+
+
+  })( jQuery );
+</script>
 	
 <?php
 get_footer();

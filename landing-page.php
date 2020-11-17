@@ -11,13 +11,11 @@ get_header('landing');
 ?>
 	
 			
-	 <section class="video-section">
+	 <section class="video-section landingvideo">
 	 	<img class="fondo" src="<?php echo bloginfo('template_url');?>/img/landing/asesoriaslider.jpg" alt="" />
 			<div class="landcont">
 				<div class="mitad">
 							
-					
-				
 						<h3 class="montserrat delgado">BRINDAMOS <strong>ASESORÍA TÉCNICA, COMERCIAL Y OPERACIONAL</strong> EN TUS PROYECTOS DE EXPORTACIÓN A CHILE.</h3>
 						<img class="banderaslide" src="<?php echo bloginfo('template_url');?>/img/landing/banderas.png" alt="" />
 
@@ -231,8 +229,8 @@ hasta grandes empresas </h3>
 	<section class="landinglist documentosseccion">
 		<div class="contenedorfull">
 				<ul class="sinmargen" >
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong> ¿Quiénes pueden importar o exportar a Chile?</strong><br>
-		        		<span class="oculto">Las personas naturales o jurídicas que tengan RUT e iniciación de actividades ante el Servicio de Impuestos Internos.</span></li>
+		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong> ¿Quiénes exportar a Chile?</strong><br>
+		        		<span class="oculto">Cualquier empresa, grande o pequeña, con o sin representación en Chile.</span></li>
 
 		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué tipos de cargas puedo mover?</strong><br>
 		        		<span class="oculto">Puede importarse cualquier mercancía, salvo aquellas que se encuentren expresamente prohibidas por la legislación vigente. En ocasiones, el producto a importar, por su naturaleza, puede estar sujeto a visto bueno, autorización o control por parte de algún servicio fiscalizador, por lo que es necesario obtenerlo, en forma previa, ante el respectivo organismo.</span></li>
@@ -241,7 +239,7 @@ hasta grandes empresas </h3>
 		        		<span class="oculto">Todas aquellas mercancías que, de acuerdo a la legislación vigente, deban ser sometidas a control previo a su importación, por algún organismo del Estado (Servicio Agrícola y Ganadero / Seremi Salud, Etc)</span></li>
 
 		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Cómo solicito la asesoría?</strong><br>
-		        		<span class="oculto">Simplemente debes ingresar a nuestro sitio web www.rdaelsauce.cl solicito asesoría y te contactará inmediatamente con el área comercial del Extraportuario, los cuales tomarán contacto con su persona a la brevedad posible.</span></li>
+		        		<span class="oculto">Simplemente, debe ingresar a nuestro sitio web www.rdaelsauce.cl,  solicitar la asesoría en el menú superior, y será contactado a la brevedad por el área comercial de Extraportuario el Sauce.</span></li>
 		        	</ul>
 	<!--<div class="btnlanding"><div class="my-btn my-btn-primary ">
 		        									<div class="my-btn-bg-top"></div>
@@ -255,7 +253,7 @@ hasta grandes empresas </h3>
 		        		
 
 		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué beneficios obtengo de la asesoría comercial?</strong><br>
-		        		<span class="oculto">Ahorrar y principalmente, tener el control total de tu logística interna, permitiendo  el registro absoluto de tu carga.</span></li>
+		        		<span class="oculto">Ahorrar y principalmente, tener el control total de su logística interna, permitiendo el registro absoluto de su carga.</span></li>
 
 		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué se puede importar?</strong><br>
 		        		<span class="oculto">Todo aquel producto manufacturado o materia prima producido por una instalación o fábrica debidamente registrada y controlada por la institución o autoridad competente del país de origen.</span></li>

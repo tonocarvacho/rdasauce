@@ -11,7 +11,7 @@ get_header();
 ?>
 	
 			
-	 <section class="video-section">
+	 <section class="video-section landingvideo">
 	 	<img class="fondo" src="<?php echo bloginfo('template_url');?>/img/landing/asesoriaslider.jpg" alt="" />
 			<div class="landcont">
 				<div class="mitad">

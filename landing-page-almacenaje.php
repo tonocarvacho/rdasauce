@@ -11,7 +11,7 @@ get_header('almacenaje');
 ?>
 	
 			
-	 <section class="video-section ">
+	 <section class="video-section landingvideo">
 		 <div class="landcont">
 				<div class="mitad">
 						<h3 class="montserrat delgado">SOLUCIÓN LOGÍSTICA TOTAL PARA TUS MERCANCÍAS DE <strong>EXPORTACIÓN O IMPORTACIÓN</strong></h3>
@@ -112,21 +112,21 @@ get_header('almacenaje');
         
 <div class="contenedor sololanding">
 	<div class="mitad frase"><ul class="sinmargen listaticket">
-        		<li><i class="fa fa-check"></i> <span>Bodegas para carga general (Importación y Exportación)</span></li>
+        		<li><i class="fa fa-check"></i> <span>Bodegas para carga general (Importación y Exportación).</span></li>
         		<li><i class="fa fa-check inlineblock"></i> <span class="inlineblock">Coordine de forma ágil y eficiente sus operaciones.</span></li>
-        		<li><i class="fa fa-check"></i> <span>Operación constante</span></li>
-        		<li><i class="fa fa-check"></i> <span>Flexibilidad de tarifas por volumen</span></li>
-				<li><i class="fa fa-check"></i> <span>Seguridad total del recinto 24/7</span></li>
+        		<li><i class="fa fa-check"></i> <span>Operación constante.</span></li>
+        		<li><i class="fa fa-check"></i> <span>Flexibilidad de tarifas por volumen.</span></li>
+				<li><i class="fa fa-check"></i> <span>Seguridad total del recinto 24/7.</span></li>
         		
         	</ul>
 					
         	</div>
         	<div class="mitad frase"><ul class="sinmargen listaticket">
         		
-        		<li><i class="fa fa-check"></i> <span>Posibilidad de aparcar posterior al proceso de nacionalización de su carga</span></li>
-        		<li><i class="fa fa-check"></i> <span>Actividades de control de los vehículos y supervisión de tránsito interior</span></li>
-        		<li><i class="fa fa-check"></i> <span>Parqueo diario con un costo de US$10</span></li>
-				<li><i class="fa fa-check"></i> <span>Sellaje de exportación por personal de aduana directo en nuestro recinto</span></li>
+        		<li><i class="fa fa-check"></i> <span>Posibilidad de aparcar posterior al proceso de nacionalización de su carga.</span></li>
+        		<li><i class="fa fa-check"></i> <span>Actividades de control de los vehículos y supervisión de tránsito interior.</span></li>
+        		<li><i class="fa fa-check"></i> <span>Parqueo diario con un costo de US$10.</span></li>
+				<li><i class="fa fa-check"></i> <span>Sellaje de exportación por personal de aduana directo en nuestro recinto.</span></li>
         	</ul>
 					
         	</div>
@@ -264,18 +264,21 @@ Se pondrá en contacto con usted.</h3>
 	<section class="landinglist documentosseccion">
 		<div class="contenedorfull">
 				<ul class="sinmargen" >
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong> ¿Quiénes pueden importar o exportar a Chile?</strong><br>
-		        		<span class="oculto">Las personas naturales o jurídicas que tengan RUT e iniciación de actividades ante el Servicio de Impuestos Internos.</span></li>
+					<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿A qué cargas va dirigido el parqueo comercial?</strong><br>
+		        		<span class="oculto">El parqueo comercial va dirigido a las cargas de importación ya nacionalizadas en el recinto y a las mercancías de exportación.</span></li>
 
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué tipos de cargas puedo mover?</strong><br>
-		        		<span class="oculto">Puede importarse cualquier mercancía, salvo aquellas que se encuentren expresamente prohibidas por la legislación vigente. En ocasiones, el producto a importar, por su naturaleza, puede estar sujeto a visto bueno, autorización o control por parte de algún servicio fiscalizador, por lo que es necesario obtenerlo, en forma previa, ante el respectivo organismo.</span></li>
+		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué cargas puedo sellar en Extraportuario El Sauce?</strong><br>
+		        		<span class="oculto">Solamente  las cargas de exportación.</span></li>
 
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué mercancías requieren visaciones, certificaciones o vistos buenos para su importación?</strong><br>
-		        		<span class="oculto">Todas aquellas mercancías que, de acuerdo a la legislación vigente, deban ser sometidas a control previo a su importación, por algún organismo del Estado (Servicio Agrícola y Ganadero / Seremi Salud, Etc)</span></li>
+		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong> ¿Qué cargas puedo almacenar en bodegas?</strong><br>
+		        		<span class="oculto">Cualquier carga de importación o exportación, exceptuando las cargas refrigeradas o IMO (carga peligrosa).</span></li>
 
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Cómo solicito la asesoría?</strong><br>
-		        		<span class="oculto">Simplemente debes ingresar a nuestro sitio web www.rdaelsauce.cl solicito asesoría y te contactará inmediatamente con el área comercial del Extraportuario, los cuales tomarán contacto con su persona a la brevedad posible.</span></li>
-		        	</ul>
+						<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong> ¿Qué es Parqueo Comercial?</strong><br>
+		        		<span class="oculto">Estacionamiento que se brinda a los camiones con su carga, en una zona primaria.</span></li>
+
+						<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong> ¿Cuáles son los costos del almacenaje?</strong><br>
+		        		<span class="oculto">Son a convenir con el cliente de acuerdo a sus necesidades.</span></li>
+		        		</ul>
 	<!--<div class="btnlanding"><div class="my-btn my-btn-primary ">
 		        									<div class="my-btn-bg-top"></div>
 		        									<div class="my-btn-bg-bottom"></div>
@@ -286,15 +289,19 @@ Se pondrá en contacto con usted.</h3>
 		        								</div></div>-->
 		        	<ul class="sinmargen" >
 		        		
+						<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong> ¿Quiénes pueden importar o exportar a Chile?</strong><br>
+		        		<span class="oculto">Las personas naturales o jurídicas que tengan RUT e iniciación de actividades ante el Servicio de Impuestos Internos.</span></li>
 
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué beneficios obtengo de la asesoría comercial?</strong><br>
-		        		<span class="oculto">Ahorrar y principalmente, tener el control total de tu logística interna, permitiendo  el registro absoluto de tu carga.</span></li>
+		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué tipos de cargas puedo mover?</strong><br>
+		        		<span class="oculto">Puede importarse cualquier mercancía, salvo aquellas que se encuentren expresamente prohibidas por la legislación vigente. En ocasiones, el producto a importar, por su naturaleza, puede estar sujeto a visto bueno, autorización o control por parte de algún servicio fiscalizador, por lo que es necesario obtenerlo, en forma previa, ante el respectivo organismo.</span></li>
 
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué se puede importar?</strong><br>
-		        		<span class="oculto">Todo aquel producto manufacturado o materia prima producido por una instalación o fábrica debidamente registrada y controlada por la institución o autoridad competente del país de origen.</span></li>
+		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué mercancías requieren visaciones, certificaciones o vistos buenos para su importación?</strong><br>
+		        		<span class="oculto">Todas aquellas mercancías que, de acuerdo a la legislación vigente, deban ser sometidas a control previo a su importación, por algún organismo del Estado (Servicio Agrícola y Ganadero / Seremi Salud, Etc)</span></li>
 
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong> ¿Qué debo hacer para importar una mercancía?</strong><br>
-		        		<span class="oculto">Si el valor de la mercancía supera los US$1.000 valor FOB: el importador debe contratar un  agente de aduanas. En el caso en que el desaduanamiento de las mercancías deba ser encomendado a este profesional, el importador deberá entregar a éste los documentos de base que se requieren para confeccionar la Declaración de Ingreso, la que podrá ser presentada al Servicio de Aduanas, vía internet.</span></li>
+		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Cómo solicito la asesoría?</strong><br>
+		        		<span class="oculto">Simplemente debes ingresar a nuestro sitio web www.rdaelsauce.cl solicito asesoría y te contactará inmediatamente con el área comercial del Extraportuario, los cuales tomarán contacto con su persona a la brevedad posible.</span></li>
+		        	
+		        		
 
 		        		
 		        		

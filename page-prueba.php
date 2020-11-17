@@ -1,6 +1,6 @@
 <?php
 /**
- *Template Name: Page-Home
+ *Template Name: Page-prueba
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -628,8 +628,8 @@ $category_block_query = new WP_Query( $args );
 				
 			</video>
 			<div class="texto-video">
-				<h2 class="montserrat">EXTRAPORTUARIO <span class="naranja">EL SAUCE</span></h2>
-			<h3 class="montserrat delgado">Ayudamos A Nacionalizar Su Mercancia <br>Con Servicios De <strong>Almacenaje, Bodegaje & Asesoria.</strong></h3>
+				<h2 class="montserrat"><strong>PRÓXIMAMENTE</strong> | <span class="naranja">ANDÉN FRIGORIZADO</span></h2>
+			<h3 class="montserrat delgado">Extraportuario El Sauce</strong></h3>
 			
 		</div>
 	 </section>
@@ -638,26 +638,7 @@ $category_block_query = new WP_Query( $args );
      
      
      
-     	<!-- ===================================
-		SECTION STATS
-	======================================== -->
-	<div class="page-rda" data-stellar-background-ratio="0.4">
-		<div class="stats-overlay"></div>
-		<div class="container">
-			<div class="row">
-				<!-- === TITLE GROUP === -->
-				<div align="center"><img src="<?php echo bloginfo('template_url');?>/img/contacto.png"></div>
-			
-				</div>	
-			</div>
-		</div>
-
-	
-	
-	
-	<!-- ===================================
-		END SECTION STATS
-	======================================== -->
+ 
     
      
      

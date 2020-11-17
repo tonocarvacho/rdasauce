@@ -25,7 +25,7 @@
 $args = array (
     'category_name' => $category,
     'post_type' => 'post',
-    'posts_per_page' => 6, 
+    'posts_per_page' => 15, 
 );
 $category_block_query = new WP_Query( $args );
     if ( $category_block_query->have_posts() ) : 
