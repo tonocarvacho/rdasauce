@@ -90,11 +90,11 @@ Almacén Extraportuario El Sauce S.A., inició oficialmente sus operaciones el d
 	============================== -->
     <div class="def-section about-team">
 		<div class="container">
-			<div class="row">
+		<div class="row">
 				
 				<!-- === TEAM ITEM === -->
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 col-sm-offset-1">
 					<div class="team-item">
 						<div class="team-item-image">
 							<div class="team-item-image-overlay">
@@ -135,6 +135,8 @@ Almacén Extraportuario El Sauce S.A., inició oficialmente sus operaciones el d
 						</div>
 					</div>
 				</div>
+
+				
 				
 				<!-- === TEAM ITEM === -->
 				
@@ -157,8 +159,8 @@ Almacén Extraportuario El Sauce S.A., inició oficialmente sus operaciones el d
 						</div>
 					</div>
 				</div>
-				
-				<!-- === TEAM 1
+
+				<!-- === TEAM ITEM === -->
 				
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
 					<div class="team-item">
@@ -180,8 +182,72 @@ Almacén Extraportuario El Sauce S.A., inició oficialmente sus operaciones el d
 					</div>
 				</div>
 				
+				
+				
+			<!-- === TEAM ITEM === -->
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+				<div class="team-item">
+						<div class="team-item-image">
+							<div class="team-item-image-overlay">
+								<div class="team-item-icons">
+									<a href="mailto:jcamus@rdaelsauce.cl"><i class="fa fa-envelope"></i></a>
+
+								</div>
+							</div>
+							<img src="<?php echo bloginfo('template_url');?>/media/team/8.jpg" alt="" />
+						</div>
+						<div class="team-item-name">
+							Jaime Camus
+						</div>
+						<div class="team-item-position">
+							JEFE INFORMÁTICA
+						</div>
+					</div>
+				</div>
+
+
+				
+				
 			
 				
+			</div>
+
+
+
+
+			<div class="row" style="margin-top: 35px">
+				
+				
+			
+				
+				
+				
+				
+				<!-- === TEAM 2	-->
+				
+				
+				
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 col-sm-offset-2">
+					<div class="team-item">
+						<div class="team-item-image">
+							<div class="team-item-image-overlay">
+								<div class="team-item-icons">
+									<a href="mailto:hcalderon@rdaelsauce.cl"><i class="fa fa-envelope"></i></a>
+										
+								
+								</div>
+							</div>
+							<img src="<?php echo bloginfo('template_url');?>/media/team/7.jpg" alt="" />
+						</div>
+						<div class="team-item-name">
+							Hernaldo Calderón
+						</div>
+						<div class="team-item-position">
+							JEFE DE UNIDAD COMERCIAL
+						</div>
+					</div>
+				</div>
+
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
 					<div class="team-item">
 						<div class="team-item-image">
@@ -203,10 +269,9 @@ Almacén Extraportuario El Sauce S.A., inició oficialmente sus operaciones el d
 						</div>
 					</div>
 				</div>
-				
-			
-				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+
+				<!-- === TEAM ITEM === -->
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 ">
 					<div class="team-item">
 						<div class="team-item-image">
 							<div class="team-item-image-overlay">
@@ -225,55 +290,10 @@ Almacén Extraportuario El Sauce S.A., inició oficialmente sus operaciones el d
 						</div>
 					</div>
 				</div>
-				-->
-				
-				
-				<!-- === TEAM 2	-->
-				
-				
-				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-					<div class="team-item">
-						<div class="team-item-image">
-							<div class="team-item-image-overlay">
-								<div class="team-item-icons">
-									<a href="mailto:hcalderon@rdaelsauce.cl"><i class="fa fa-envelope"></i></a>
-										
-								
-								</div>
-							</div>
-							<img src="<?php echo bloginfo('template_url');?>/media/team/7.jpg" alt="" />
-						</div>
-						<div class="team-item-name">
-							Hernaldo Calderón
-						</div>
-						<div class="team-item-position">
-							EJECUTIVO COMERCIAL
-						</div>
-					</div>
-				</div>
 				
 			
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-				<div class="team-item">
-						<div class="team-item-image">
-							<div class="team-item-image-overlay">
-								<div class="team-item-icons">
-									<a href="mailto:jcamus@rdaelsauce.cl"><i class="fa fa-envelope"></i></a>
-
-								</div>
-							</div>
-							<img src="<?php echo bloginfo('template_url');?>/media/team/8.jpg" alt="" />
-						</div>
-						<div class="team-item-name">
-							Jaime Camus
-						</div>
-						<div class="team-item-position">
-							JEFE INFORMÁTICA
-						</div>
-					</div>
-				</div>
+			
 				
 			
 				

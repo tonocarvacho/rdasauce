@@ -1,6 +1,6 @@
 <?php
 /**
- *Template Name: landing-page
+ *Template Name: landing-pageb
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
