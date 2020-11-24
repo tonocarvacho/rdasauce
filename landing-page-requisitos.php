@@ -1,6 +1,6 @@
 <?php
 /**
- *Template Name: landing-page
+ *Template Name: landing-page-requisitos
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -12,8 +12,7 @@ get_header('landing');
 	
 			
 	 <section class="video-section landingvideo">
-	 	<img class="fondo" src="<?php the_post_thumbnail_url()?>
-" alt="" />
+	 	<img class="fondo" src="<?php the_post_thumbnail_url()?>" alt="" />
 			<div class="landcont">
 				<div class="mitad">
 							
@@ -57,32 +56,6 @@ $img_src = $img_atts[0];
             </div>
 				</div>
 	 </section>
-	    <section class="def-section landing">
-        
-<div class="contenedor sololanding reverse">
-	
-        	<div class="mitad"><h2 class="delgado"><?php echo get_field( "texto_secundario_a"); ?> <strong><?php echo get_field( "texto_secundario_negrita"); ?></strong> <?php echo get_field( "texto_secundario_b"); ?> </h2>
-        		
-						<div class="my-btn my-btn-primary contactarse solodesktop">
-								<div class="my-btn-bg-top"></div>
-								<div class="my-btn-bg-bottom"></div>
-								<div class="my-btn-text">
-									 COMENZAR TU <strong>EXPORTACIÓN</strong> A CHILE
-								</div>
-							</div>
-        	</div>
-        	<img class="mitad loop" src="<?php echo bloginfo('template_url');?>/img/landing/asesorialogistica.jpg">
-        	<div class="my-btn my-btn-primary contactarse solomovil">
-								<div class="my-btn-bg-top"></div>
-								<div class="my-btn-bg-bottom"></div>
-								<div class="my-btn-text">
-									 COMENZAR TU <strong>EXPORTACIÓN</strong> A CHILE
-								</div>
-							</div>
-
-        </div>
-        
-    </section>
     
 	<!-- ===================================
 		SECTION STATS
@@ -90,7 +63,7 @@ $img_src = $img_atts[0];
 	<div id="pregfreq" class="def-section home2stats fraselanding" >
 		<div class="title-group">
 			<div class="iconpreg"><i class="fa fa-list-ul"></i></div>
-					<h3 class="montserrat delgado">PREGUNTAS FRECUENTES</h3>
+					<h3 class="montserrat delgado">REQUISITOS PARA EXPORTAR A CHILE<br><strong>PREGUNTAS FRECUENTES</strong></h3>
 						<!--<p class="claro"><i class="fa fa-arrow-right"></i> <span>Contactarse</span></p>-->
 				
 				</div>
@@ -100,7 +73,7 @@ $img_src = $img_atts[0];
 	<!-- ===================================
 		END SECTION STATS
 	======================================== -->
-	<section class="landinglist documentosseccion">
+	<section class="landinglist documentosseccion requisitos-faq">
 		<div class="contenedorfull">
 				<ul class="sinmargen" >
 		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong> ¿Quiénes pueden exportar a Chile?</strong><br>
@@ -152,60 +125,9 @@ $img_src = $img_atts[0];
 
 
 	</section>
-	<!-- ===================================
-		SECTION STATS
-	======================================== -->
-	<div class="def-section home2stats fraselanding" >
-		<div class="title-group">
-					<h3 class="montserrat delgado">Resolvemos las necesidades de cada cliente con <strong>precios competitivos y optimizando</strong> al máximo los tiempos</h3>
-					
-				
-				</div>
-		
-		
-	</div>
-	<!-- ===================================
-		END SECTION STATS
-	======================================== -->
-	    <section class="def-section empresa landinglist liuno">
-        
-<div class="contenedor sololanding">
-	<img class="mitad" src="<?php echo bloginfo('template_url');?>/img/landing/asesoria.jpg">
-        	<div class="mitad frase"><ul class="sinmargen listaticket">
-        		<li><i class="fa fa-check"></i> <span>ENFOQUE DOOR TO DOOR</span></li>
-        		<li><i class="fa fa-check inlineblock"></i> <span class="inlineblock">TRANSPARENCIA EN LA INFORMACIÓN</span></li>
-        		<li><i class="fa fa-check"></i> <span>TOMA DE DECISIONES OPORTUNAS</span></li>
-        		<li><i class="fa fa-check"></i> <span>PRECIOS COMPETITIVOS</span></li>
-        	</ul>
-        		
-						
-        	</div>
-
-        </div>
-        
-    </section>
-
-    	<!-- ===================================
-		SECTION STATS
-	======================================== -->
-	<div id="btndocuscontenedor" class="def-section home2stats fraselanding" >
-		<div class="title-group">
-					<h3 class="montserrat delgado"><strong>CLICK AQUÍ</strong> Y VISUALIZA LOS <strong> DOCUMENTOS QUE NECESITAS</strong>
-PARA ENTRAR A CHILE</h3>
-					<br>
-					<p id="btndocus" class="claro"><span>Ver Documentos</span><br><i class="fa fa-arrow-down"></i></p>
-
-				
-				</div>
-		
-		
-	</div>
-	<!-- ===================================
-		END SECTION STATS
-	======================================== -->
-	<section id="listadocus" class="landinglist documentosseccion oculto">
+	<section id="listadocus" class="landinglist documentosseccion">
 		<div class="contenedorfull">
-				<h3 class="montserrat delgado">1. DOCUMENTOS NECESARIOS PARA LA <strong>EXPORTACIÓN A CHILE</strong>: </h3>
+				<h3 class="montserrat delgado requisitos-titulo">1. DOCUMENTOS NECESARIOS PARA LA <strong>EXPORTACIÓN A CHILE</strong>: </h3>
 				<ul class="listadocus">
 		        		<li><div class="icondocu"><img  src="<?php echo bloginfo('template_url');?>/img/landing/embarque.png"></div> <span><strong>Conocimiento de Embarque en original</strong>, que acredite el dominio de la mercancía por parte del consignatario.</span></li>
 
@@ -239,7 +161,7 @@ PARA ENTRAR A CHILE</h3>
 
 	</section>
 	<div id="contactarse"></div>
-	<div id="profesionales" class="def-section home2stats fraselanding oculto" >
+	<div id="profesionales" class="def-section home2stats fraselanding" >
 		<div class="title-group">
 					<h3 class="montserrat delgado"><strong>Solicita Asesoría</strong> Con Nuestros Profesionales</h3>
 					<br>
@@ -283,8 +205,66 @@ hasta grandes empresas </h3>
 	
 
 
+	<!-- ===================================
+		SECTION STATS
+	======================================== -->
+	<div class="def-section home2stats fraselanding" >
+		<div class="title-group">
+					<h3 class="montserrat delgado">Resolvemos las necesidades de cada cliente con <strong>precios competitivos y optimizando</strong> al máximo los tiempos</h3>
+					
+				
+				</div>
+		
+		
+	</div>
+	<!-- ===================================
+		END SECTION STATS
+	======================================== -->
+	    <section class="def-section empresa landinglist liuno">
+        
+<div class="contenedor sololanding">
+	<img class="mitad" src="<?php echo bloginfo('template_url');?>/img/landing/asesoria.jpg">
+        	<div class="mitad frase"><ul class="sinmargen listaticket">
+        		<li><i class="fa fa-check"></i> <span>ENFOQUE DOOR TO DOOR</span></li>
+        		<li><i class="fa fa-check inlineblock"></i> <span class="inlineblock">TRANSPARENCIA EN LA INFORMACIÓN</span></li>
+        		<li><i class="fa fa-check"></i> <span>TOMA DE DECISIONES OPORTUNAS</span></li>
+        		<li><i class="fa fa-check"></i> <span>PRECIOS COMPETITIVOS</span></li>
+        	</ul>
+        		
+						
+        	</div>
 
+        </div>
+        
+    </section>
+
+
+	    <section class="def-section landing">
+        
+<div class="contenedor sololanding reverse">
 	
+        	<div class="mitad"><h2 class="delgado">Integramos la cadena logística con una <strong>mirada de 360º</strong> en comercio exterior y comercio internacional </h2>
+        		
+						<div class="my-btn my-btn-primary contactarse solodesktop">
+								<div class="my-btn-bg-top"></div>
+								<div class="my-btn-bg-bottom"></div>
+								<div class="my-btn-text">
+									 COMENZAR TU <strong>EXPORTACIÓN</strong> A CHILE
+								</div>
+							</div>
+        	</div>
+        	<img class="mitad loop" src="<?php echo bloginfo('template_url');?>/img/landing/asesorialogistica.jpg">
+        	<div class="my-btn my-btn-primary contactarse solomovil">
+								<div class="my-btn-bg-top"></div>
+								<div class="my-btn-bg-bottom"></div>
+								<div class="my-btn-text">
+									 COMENZAR TU <strong>EXPORTACIÓN</strong> A CHILE
+								</div>
+							</div>
+
+        </div>
+        
+    </section>
 
 
 	

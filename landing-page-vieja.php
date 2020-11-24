@@ -1,6 +1,6 @@
 <?php
 /**
- *Template Name: landing-page
+ *Template Name: landing-page-vieja
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -84,74 +84,6 @@ $img_src = $img_atts[0];
         
     </section>
     
-	<!-- ===================================
-		SECTION STATS
-	======================================== -->
-	<div id="pregfreq" class="def-section home2stats fraselanding" >
-		<div class="title-group">
-			<div class="iconpreg"><i class="fa fa-list-ul"></i></div>
-					<h3 class="montserrat delgado">PREGUNTAS FRECUENTES</h3>
-						<!--<p class="claro"><i class="fa fa-arrow-right"></i> <span>Contactarse</span></p>-->
-				
-				</div>
-		
-		
-	</div>
-	<!-- ===================================
-		END SECTION STATS
-	======================================== -->
-	<section class="landinglist documentosseccion">
-		<div class="contenedorfull">
-				<ul class="sinmargen" >
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong> ¿Quiénes pueden exportar a Chile?</strong><br>
-		        		<span class="oculto">Cualquier empresa, grande o pequeña, con o sin representación en Chile.</span></li>
-
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué tipos de cargas puedo mover?</strong><br>
-		        		<span class="oculto">Puede importarse cualquier mercancía, salvo aquellas que se encuentren expresamente prohibidas por la legislación vigente. En ocasiones, el producto a importar, por su naturaleza, puede estar sujeto a visto bueno, autorización o control por parte de algún servicio fiscalizador, por lo que es necesario obtenerlo, en forma previa, ante el respectivo organismo.</span></li>
-
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué mercancías requieren visaciones, certificaciones o vistos buenos para su importación?</strong><br>
-		        		<span class="oculto">Todas aquellas mercancías que, de acuerdo a la legislación vigente, deban ser sometidas a control previo a su importación, por algún organismo del Estado (Servicio Agrícola y Ganadero / Seremi Salud, Etc)</span></li>
-
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Cómo solicito más información?</strong><br>
-		        		<span class="oculto">Contactanos presionando <a href="" class="contactarse">AQUÍ</a> o entra a nuestro sitio web <a href="https://rdaelsauce.cl/">www.rdaelsauce.cl</a></span></li>
-		        	</ul>
-	<!--<div class="btnlanding"><div class="my-btn my-btn-primary ">
-		        									<div class="my-btn-bg-top"></div>
-		        									<div class="my-btn-bg-bottom"></div>
-		        									<div class="my-btn-text">
-		        										 <strong>CLICK AQUI</strong> Si Necesitas Ayuda Con Tus Documentos Para Exportar En Chile
-
-		        									</div>
-		        								</div></div>-->
-		        	<ul class="sinmargen" >
-		        		
-
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué beneficios obtengo de la asesoría comercial?</strong><br>
-		        		<span class="oculto">Ahorrar y principalmente, tener el control total de su logística interna, permitiendo el registro absoluto de su carga.</span></li>
-
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué se puede importar?</strong><br>
-		        		<span class="oculto">Todo aquel producto manufacturado o materia prima producido por una instalación o fábrica debidamente registrada y controlada por la institución o autoridad competente del país de origen.</span></li>
-
-		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong> ¿Qué debo hacer para importar una mercancía a Chile?</strong><br>
-		        		<span class="oculto">Si el valor de la mercancía supera los US$1.000 valor FOB: el importador debe contratar un  agente de aduanas. En el caso en que el desaduanamiento de las mercancías deba ser encomendado a este profesional, el importador deberá entregar a éste los documentos de base que se requieren para confeccionar la Declaración de Ingreso, la que podrá ser presentada al Servicio de Aduanas, vía internet.</span></li>
-
-		        		
-		        		
-		        	</ul>
-		        
-							
-        	<div class="my-btn my-btn-primary contactarse btn-medio">
-								<div class="my-btn-bg-top"></div>
-								<div class="my-btn-bg-bottom"></div>
-								<div class="my-btn-text">
-									  OBTENER MÁS <strong> INFORMACIÓN</strong> 
-
-								</div>
-							</div>
-				</div>
-
-
-	</section>
 	<!-- ===================================
 		SECTION STATS
 	======================================== -->
@@ -281,6 +213,67 @@ hasta grandes empresas </h3>
 		</div>
 	</div>
 	
+	<!-- ===================================
+		SECTION STATS
+	======================================== -->
+	<div id="pregfreq" class="def-section home2stats fraselanding" >
+		<div class="title-group">
+			<div class="iconpreg"><i class="fa fa-list-ul"></i></div>
+					<h3 class="montserrat delgado">REVISA AQUÍ NUESTRAS<br>
+						<strong>PREGUNTAS FRECUENTES</strong></h3>
+						<!--<p class="claro"><i class="fa fa-arrow-right"></i> <span>Contactarse</span></p>-->
+				
+				</div>
+		
+		
+	</div>
+	<!-- ===================================
+		END SECTION STATS
+	======================================== -->
+	<section class="landinglist documentosseccion">
+		<div class="contenedorfull">
+				<ul class="sinmargen" >
+		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong> ¿Quiénes exportar a Chile?</strong><br>
+		        		<span class="oculto">Cualquier empresa, grande o pequeña, con o sin representación en Chile.</span></li>
+
+		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué tipos de cargas puedo mover?</strong><br>
+		        		<span class="oculto">Puede importarse cualquier mercancía, salvo aquellas que se encuentren expresamente prohibidas por la legislación vigente. En ocasiones, el producto a importar, por su naturaleza, puede estar sujeto a visto bueno, autorización o control por parte de algún servicio fiscalizador, por lo que es necesario obtenerlo, en forma previa, ante el respectivo organismo.</span></li>
+
+		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué mercancías requieren visaciones, certificaciones o vistos buenos para su importación?</strong><br>
+		        		<span class="oculto">Todas aquellas mercancías que, de acuerdo a la legislación vigente, deban ser sometidas a control previo a su importación, por algún organismo del Estado (Servicio Agrícola y Ganadero / Seremi Salud, Etc)</span></li>
+
+		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Cómo solicito la asesoría?</strong><br>
+		        		<span class="oculto">Simplemente, debe ingresar a nuestro sitio web www.rdaelsauce.cl,  solicitar la asesoría en el menú superior, y será contactado a la brevedad por el área comercial de Extraportuario el Sauce.</span></li>
+		        	</ul>
+	<!--<div class="btnlanding"><div class="my-btn my-btn-primary ">
+		        									<div class="my-btn-bg-top"></div>
+		        									<div class="my-btn-bg-bottom"></div>
+		        									<div class="my-btn-text">
+		        										 <strong>CLICK AQUI</strong> Si Necesitas Ayuda Con Tus Documentos Para Exportar En Chile
+
+		        									</div>
+		        								</div></div>-->
+		        	<ul class="sinmargen" >
+		        		
+
+		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué beneficios obtengo de la asesoría comercial?</strong><br>
+		        		<span class="oculto">Ahorrar y principalmente, tener el control total de su logística interna, permitiendo el registro absoluto de su carga.</span></li>
+
+		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong>¿Qué se puede importar?</strong><br>
+		        		<span class="oculto">Todo aquel producto manufacturado o materia prima producido por una instalación o fábrica debidamente registrada y controlada por la institución o autoridad competente del país de origen.</span></li>
+
+		        		<li class="pregunta" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-down oculto"></i> <strong> ¿Qué debo hacer para importar una mercancía?</strong><br>
+		        		<span class="oculto">Si el valor de la mercancía supera los US$1.000 valor FOB: el importador debe contratar un  agente de aduanas. En el caso en que el desaduanamiento de las mercancías deba ser encomendado a este profesional, el importador deberá entregar a éste los documentos de base que se requieren para confeccionar la Declaración de Ingreso, la que podrá ser presentada al Servicio de Aduanas, vía internet.</span></li>
+
+		        		
+		        		
+		        	</ul>
+		        
+							
+				</div>
+
+
+	</section>
 
 
 
@@ -394,9 +387,9 @@ $( "#profesionales" ).show();
 		
   //$( "i" ).insertBefore( $( ".wpcf7-list-item-label" ) );
   $( ".pregunta" ).click(function() {
+$(this).find('span').slideToggle('fast');
 $(this).find('i.fa-caret-right').toggle();
 $(this).find('i.fa-caret-down').toggle();
-$(this).find('span').toggle();
 });
 })
 

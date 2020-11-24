@@ -699,7 +699,7 @@ $category_block_query = new WP_Query( $args );
 		END BLOG SECTION
 	======================================== -->
      
-     <section class="video-section">
+     <section class="video-section home-video-wrap">
 	 	<video class="video-home" loop="loop" autoplay="" playsinline="" muted="" preload="none" src="<?php echo bloginfo('template_url');?>/img/video/frioloop.mp4" >
 				<source type='video/mp4;' src="<?php echo bloginfo('template_url');?>/img/video/frioloop.mp4">
 				

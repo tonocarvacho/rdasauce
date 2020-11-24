@@ -12,6 +12,7 @@ get_header('almacenaje');
 	
 			
 	 <section class="video-section landingvideo">
+	 	<img class="fondo" src="<?php the_post_thumbnail_url()?>" alt="" />
 		 <div class="landcont">
 				<div class="mitad">
 						<h3 class="montserrat delgado">SOLUCIÓN LOGÍSTICA TOTAL PARA TUS MERCANCÍAS DE <strong>EXPORTACIÓN O IMPORTACIÓN</strong></h3>
@@ -49,8 +50,6 @@ get_header('almacenaje');
                   
             </div>
 				</div>	
-	 	<div class="landing-almacenaje">
-			</div>
 	 </section>
 	    <section class="def-section landing seccicons">
         
@@ -425,7 +424,7 @@ $( "#profesionales" ).show();
 		
   //$( "i" ).insertBefore( $( ".wpcf7-list-item-label" ) );
   $( ".pregunta" ).click(function() {
-$(this).find('span').slideToggle('fast');
+$(this).find('span').toggle();
 $(this).find('i.fa-caret-right').toggle();
 $(this).find('i.fa-caret-down').toggle();
 });

@@ -32,8 +32,8 @@
 	
 					<!--<div class="montserrat"> <i class="fa fa-home naranja"></i> <strong> <a href="http://rdaelsauce.cl"> <span>Ir a www.rdasauce.cl</span> </a></strong></div>-->
 					<div>
-						<strong><a href="" class="mgr"><i class="fa fa-phone"></i> <span>+56 34 237 3900</span></a></strong>
-						 <strong><a href=""><i class="fa fa-envelope"></i> <span>informaciones@rdaelsauce.cl</span></a></strong>
+						<strong><a href="Tel:+56957886514" class="mgr"><i class="fa fa-phone"></i> <span>+56 34 237 3900</span></a></strong>
+						 <strong><a href="mailto:informaciones@rdaelsauce.cl"><i class="fa fa-envelope"></i> <span>informaciones@rdaelsauce.cl</span></a></strong>
 						</div>
 				</div>
 
