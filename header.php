@@ -218,6 +218,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<li>
 									<a href="<?php echo home_url(); ?>/glosario">GLOSARIO</a>
 								</li>
+								<li>
+									<a href="<?php echo home_url(); ?>/resoluciones">RESOLUCIONES</a>
+								</li>
 							</ul>
 							
 						

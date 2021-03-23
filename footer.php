@@ -224,6 +224,9 @@
 					<li><a href="manuales">MANUALES</a></li>
 					<li><a href="certificaciones">CERTIFICACIONES</a></li>
 					<li><a href="glosario">GLOSARIO</a></li>
+								<li>
+									<a href="<?php echo home_url(); ?>/resoluciones">RESOLUCIONES</a>
+								</li>
 				</ul>
 			</li>
 			
